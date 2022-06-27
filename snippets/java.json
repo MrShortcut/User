@@ -1,0 +1,285 @@
+{
+	// Place your snippets for java here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// },
+	//
+	// "": {
+	// 	"prefix": "",
+	// 	"body": [
+	// 		""
+	// 	],
+	// 	"description": ""
+	// },
+	// "": {
+	// 	"prefix": "",
+	// 	"body": [
+	// 		""
+	// 	],
+	// 	"description": ""
+	// },
+	"Standart Scanner": {
+		"prefix": "Sc",
+		"body": [
+			"${1:Scanner} sc = new Scanner(System.in);",
+			"\t${2:todo....}",
+			"sc.close();"
+		],
+		"description": "Standart Scanner input"
+	},
+	"Comments qute": {
+		"prefix": "comm",
+		"body": [
+			"\n/****************************************************************",
+			"*****************************************************************",
+			"* $1",
+			"****************************************************************/",
+			"\t\t$2"
+		],
+		"description": "Qute comments"
+	},
+	"Extended class": {
+		"prefix": "ec",
+		"body": [
+			"public class ${TM_FILENAME_BASE} extends ${1:superclass} {\n\t$0\n}",
+		],
+		"description": ""
+	},
+	"Simple Class": {
+		"prefix": "sc",
+		"body": [
+			"public class ${TM_FILENAME_BASE} {",
+			"\t$1",
+			"}",
+		],
+		"description": "Simple empty class"
+	},
+	"Standar Class": {
+		"prefix": "stc",
+		"body": [
+			"$1",
+			"public class ${TM_FILENAME_BASE} {",
+			"\tpublic static void main(String[] args) {",
+			"\t\t${2:todo....}",
+			"\t}",
+			"}"
+		],
+		"description": "Standar Class filename base"
+	},
+	"ComposeAndThen": {
+		"prefix": "cat",
+		"body": [
+			"/**",
+			" * Ejecutar una función antes de una función @compose()",
+			" * Ejecutar una función después de una función @andThen()",
+			" */",
+			"Function<${1:Integer}, ${2:Integer}> ${3:fnName} = ${4:x} -> {",
+			"\t${5://todo....}",
+			"};\n",
+			"Function<${6:Integer}, ${7:Integer}> ${8:fnAntes} =",
+      "\t${3:fnName}.compose(${9:y} -> {",
+			"\t${10://todo....}",
+      "});",
+			"Function<${11:Integer}, ${12:Integer}> ${13:fnDespues} =",
+      "\t${3:fnName}.andThen(${14:x} -> {",
+			"\t${15://todo....}",
+      "});",
+			"System.out.println(${3:fn}.apply(${16:p}));"
+		],
+		"description": "Compose and then"
+	},
+	"ChainerMethod": {
+		"prefix": "chai",
+		"body": [
+			"/**",
+			" * Clase que contiene una serie de métodos que devuelven una instancia de Chainer que se pueden encadenar",
+			" * @Ejemplos",
+			" * StringBuilder stringBuilder = new StringBuilder();",
+    	" * stringBuilder.append(\"Hello \")",
+      " *         .append(\"world\")",
+      " *         .append(\"!\");",
+			" * Chainer chainer = new Chainer();",
+    	" * chainer.sayHi().sayBye();",
+			" */",
+			"static class ${1:Chainer} {",
+				"\tpublic ${1:Chainer} ${2:sayHi}() {",
+					"\t\tSystem.out.println(${3:\"Hi\"});",
+					"\t\treturn this;",
+				"\t}",
+				"\tpublic ${1:Chainer} ${4:sayBye}() {",
+					"\t\tSystem.out.println(${5:\"Bye\"});",
+					"\t\treturn this;",
+				"\t}",
+			"}",
+		],
+		"description": "Chainer method"
+	},
+	"ForEach": {
+		"prefix": "fore",
+		"body": [
+			"${1:teachers}.forEach(${2:e} -> ${3:System.out.println(${4:e})});"
+		],
+		"description": "For Each"
+	},
+	"ReferenceOperator": {
+		"prefix": "refo",
+		"body": [
+			"/**",
+			" * Podemos usar metodos definidos en otros lados, con el operador de refencía ::",
+			" * Deben cumplir con las mismas caracteristicas cantidad y tipos de parametros para poder generar",
+			" * el mismo resultado.",
+			" */",
+			"profes.forEach(System.out::println);",
+			"static <T> List<T> getList (T... elements) {",
+			"\treturn Arrays.asList(elements);",
+			"}",
+		],
+		"description": "Reference operator"
+	},
+	"TryFunction": {
+		"prefix": "trif",
+		"body": [
+			"/**",
+			" * La estructura de la funcion la definimos nosotros",
+			" * parametros 3 tipos de datos (T, U , V) <-",
+			" * Un retorno typo R ->",
+			" * Parametros GENERICOS que no sabemos cuales son, pero al usarlos los pasamos como parametros",
+			" */",
+			"@FunctionalInterface",
+			"interface ${1:TriFunction}<${2:T}, ${3:U}, ${4:V}, ${5:R}> {",
+			"\t${5:R} apply(${2:T} ${6:t}, ${3:U} ${7:u}, ${4:V} ${8:v});",
+			"}",
+		],
+		"description": "TriFunction"
+	},
+	"Single abstract method": {
+		"prefix": "sam",
+		"body": [
+			"/**",
+   		" * Single abstract method",
+   		" */",
+			"@FunctionalInterface",
+			"interface ${1:BiConsumer} {",
+			"\tvoid ${2:name_method}();",
+			"}",
+		],
+		"description": "Single abstract method"
+	},
+	"UnaryOpertaro": {
+		"prefix": "unp",
+		"body": [
+			"// Solo se especifica un solo tipo de dato. Se entiende que tendrá como resultado el mismo tipo.",
+			"UnaryOPerator<${1:String}> ${2:addMark} = ${3:text} -> ${3:text} + ${4:\"!\"};",
+  		"System.out.println(${2:addMark}.apply(${5:\"Hello World\"})); // -> ${6:Hello World!}",
+		],
+		"description": "Unary Operator"
+	},
+	"5w": {
+		"prefix": "5w",
+		"body": [
+			"/**",
+			" * Who",
+			" * What",
+			" * When",
+			" * Where",
+			" * Why",
+			" * Speak english with Tiffani",
+			" */",
+		],
+		"description": "Think in english"
+	},
+	"PredicateTwo": {
+		"prefix": "pre2",
+		"body": [
+			"//Es un interface funcional que define una condición que un objeto determinado debe cumplir. -> IsBoolean?",
+			"Predicate<${1:Student}> ${2:isApproved} = ${3:student} -> ${3:student}.${4:getCalificacion}() ${5:>=} ${6:6.0};",
+			"${1:Student} ${7:rodri} = new ${1:Student}(${8:8.0}); // ✅",
+			"System.out.println(${2:isApproved}.test(${7:rodri})); // -> true",
+		],
+		"description": "Predicate Interface two"
+	},
+	"Predicate": {
+		"prefix": "pre",
+		"body": [
+			"// Tener predicados para validar cosas y usarlos en tus clases de prueba.",
+			"Predicate<${1:Integer}> ${2:isEven} = ${3:x} -> ${4:x % 2 == 0};",
+			"System.out.println(${2:isEven}.test(${5:2})); $6// Revisar si el predicado es verdad",
+		],
+		"description": "Predicate Interface"
+	},
+	"SimplyMethod": {
+		"prefix": "sme",
+		"body": [
+			"static ${1:int} ${2:squareThree}(${4:int x}) {",
+				"\treturn ${5:x * x};",
+			"}",
+		],
+		"description": "Simply Method"
+	},
+	"OverrideFunctional": {
+		"prefix": "ofn",
+		"body": [
+			"//Func <Recibe, Devuelve> f_name = () -> {}; //using -> square.apply(2)",
+  		"Function<${1:Integer}, ${2:Integer}> ${3:square} = ${4:x} -> ${5:x} * ${6:x};\n",
+			"Function<Integer, Integer> squareTwo = new Function<Integer, Integer>() {",
+			"\t@Override",
+			"\tpublic Integer apply(Integer x) {",
+				"\t\treturn x * x;",
+			"\t}",
+			"};"
+		],
+		"description": "Override Arrow Functional Lambda"
+	},
+	"Functional": {
+		"prefix": "afn",
+		"body": [
+			"//Func <Recibe, Devuelve> f_name = () -> {}; //using -> square.apply(2)",
+  		"Function<${1:Integer}, ${2:Integer}> ${3:square} = ${4:x} -> ${5:x} * ${6:x};",
+		],
+		"description": "Arrow Functional Lambda"
+	},
+	"psv": {
+		"prefix": "psv",
+		"body": [
+			"public static void $1($2) {",
+			"\t$3",
+			"}",
+		],
+		"description": "public static void $1()"
+	},
+	"Doc": {
+		"prefix": "doc",
+		"body": [
+			"/**",
+			" * $1",
+			" */",
+		],
+		"description": "Doc"
+	},
+	"Fibbonacci": {
+		"prefix": "fib",
+		"body": [
+			"// Prints the fibbonacci sequence.",
+			"public static void fibbonacci() {",
+				"\tdouble n0 = 0;",
+				"\tdouble n1 = 1;",
+				"\tfor (int i = 1 ; i < 2000 ; i++) {",
+					"\t\tdouble fib = n0 + n1;",
+					"\t\tSystem.out.println(n0);",
+					"\t\tn0 = n1;",
+					"\t\tn1 = fib;",
+				"\t}",
+			"}",
+		],
+		"description": "Fibonacci sequence"
+	},
+}

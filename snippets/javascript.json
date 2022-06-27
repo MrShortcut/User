@@ -1,0 +1,496 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// },
+
+	"QuteCommentsForDate": {
+		"prefix": "qdat",
+		"body": [
+			"/****************************************************************",
+			"*::::::::::::$2:::::::*::${1:MY|JSON|CONFIGS}::*::::::::::$2:::::::::*",
+			"*!:::::::::::$4:::::::::*::${3:27/JUN/2022}::*::::::::::::$4::::::::*",
+			"****************************************************************/",
+			"$5"
+		],
+		"description": "Qute comments for the date"
+	},
+
+	"QuteCommentsForCore": {
+		"prefix": "core",
+		"body": [
+			"/****************************************************************",
+			"*:::::::::::::$2::::::::*::${1:PRINT|VERSION}::*::::::::::::$2::::::::::*",
+			"****************************************************************/",
+			"$3"
+		],
+		"description": "Qute comments for the core"
+	},
+
+	"Colors of consola": {
+		"prefix": "ccolors",
+		"body": [
+			"/**",
+			" * @Colors consola",
+			" */",
+			"// \\x1b[32m%s\\x1b[0m // green",
+			"// \\x1b[31m%s\\x1b[0m // red",
+			"// \\x1b[33m%s\\x1b[0m // yellow",
+			"// \\x1b[34m%s\\x1b[0m // blue",
+			"// \\x1b[35m%s\\x1b[0m // magenta",
+			"// \\x1b[36m%s\\x1b[0m // cyan",
+			"// \\x1b[37m%s\\x1b[0m // white",
+			"// \\x1b[90m%s\\x1b[0m // gray",
+			"// \\x1b[91m%s\\x1b[0m // red bright",
+			"// \\x1b[92m%s\\x1b[0m // green bright",
+			"// \\x1b[93m%s\\x1b[0m // yellow bright",
+			"// \\x1b[94m%s\\x1b[0m // blue bright",
+			"// \\x1b[95m%s\\x1b[0m // magenta bright",
+			"// \\x1b[96m%s\\x1b[0m // cyan bright",
+			"// \\x1b[97m%s\\x1b[0m // white bright",
+			"// \\x1b[40m%s\\x1b[0m // black",
+			"// \\x1b[41m%s\\x1b[0m // red bright",
+			"// \\x1b[42m%s\\x1b[0m // green bright",
+			"// \\x1b[43m%s\\x1b[0m // yellow bright",
+			"// \\x1b[44m%s\\x1b[0m // blue bright",
+			"// \\x1b[45m%s\\x1b[0m // magenta bright",
+			"// \\x1b[46m%s\\x1b[0m // cyan bright",
+			"// \\x1b[47m%s\\x1b[0m // white bright",
+		],
+		"description": "Console colors terminal"
+	},
+
+	"3Log": {
+		"prefix": "3Log",
+		"body": [
+			"fLog$1\n",
+			"eLog$2\n",
+			"uLog$3"
+		],
+		"description": "🤖 Logger -> "
+	},
+
+	"EmojiPediaLogger": {
+		"prefix": "eLog",
+		"body": [
+			"/**",
+			" * #### Emojis that I use to log to the console -> smile 😀 check ✅, cross ❌",
+			" * @> loading 🔄",
+			" * @> error: 🚩",
+			" * @> info: ℹ️ ",
+			" * @> deprecated: 💩",
+			"//todo....",
+			" * warning: '⚠️', * error: '🛑', info: 'ℹ️', question: '❓', *	exclamation: '❗', robot: '🤖', deploy: '🚀', *	bug: '🐛', code: '💻', git: '🐙', *	lol: '😂', not_working: '🚫', todo: '💡', *	task: '🗒', fake: '🤔', bad: '💀', *	good: '💯', nice: '🙌', very_nice: '🤗', *	very_good: '🤩', glass: '🍺', cheers: '🎉', *	thumbsup: '👍', thumbsdown: '👎', thumbsupdown: '👆', *	thumbsupdown2: '👇', thumbsupdown3: '👈', thumbsupdown4: '👉', *	thumbsupdown5: '👊', thumbsupdown6: '👋', flag: '🚩', bomb: '💣',",
+			" */",
+			"export const Emoji = {",
+			"\t/** 😀 */",
+			"\t\tsmile: '😀',",
+			"\t/** ✅ */",
+			"\t\tcheck: '✅',",
+			"\t/** ❌ */",
+			"\t\tcross: '❌',",
+			"\t\tloading: '🔄',",
+			"\t/** 💩 */",
+			"\t\tdeprecated: '💩',",
+			"\t\ttrash: '🗑',",
+			"\t\twarning: '⚠️',",
+			"\t\terror: '🛑',",
+			"\t\tinfo: 'ℹ️',",
+			"\t/** ❓ */",
+			"\t\tquestion: '❓',",
+			"\t\texclamation: '❗',",
+			"\t/** 🤖 */",
+			"\t\trobot: '🤖',",
+			"\t\tdeploy: '🚀',",
+			"\t\tbug: '🐛',",
+			"\t\tcode: '💻',",
+			"\t\tgit: '🐙',",
+			"\t\tlol: '😂',",
+			"\t\tnot_working: '🚫',",
+			"\t\ttodo: '💡',",
+			"\t\ttask: '🗒',",
+			"\t\tfake: '🤔',",
+			"\t\tbad: '💀',",
+			"\t\tgood: '💯',",
+			"\t\tnice: '🙌',",
+			"\t\tvery_nice: '🤗',",
+			"\t\tvery_good: '🤩',",
+			"\t\tglass: '🍺',",
+			"\t\tcheers: '🎉',",
+			"\t\tthumbsup: '👍',",
+			"\t\tthumbsdown: '👎',",
+			"\t\tthumbsupdown: '👆',",
+			"\t\tthumbsupdown2: '👇',",
+			"\t\tthumbsupdown3: '👈',",
+			"\t\tthumbsupdown4: '👉',",
+			"\t\tthumbsupdown5: '👊',",
+			"\t\tthumbsupdown6: '👋',",
+			"\t\tflag: '🚩',",
+			"\t/** 💣 */",
+			"\t\tbomb: '💣',",
+			"};",
+		],
+		"description": "🤖 Logger -> "
+	},
+
+	"Loggerf": {
+		"prefix": "fLog",
+		"body": [
+			"/** 🤖",
+			" * takes an @argument<- and logs it to the console.",
+			" * @> @option <-",
+			" * @> {@event} <-",
+			" */",
+			"export function Log(o=null, e, l='🤖') {",
+			"\t!o ?  console.log(l, e)",
+			"\t\t:\tconsole.log(l, o, e);",
+			"};",
+		],
+		"description": "🤖 Logger -> "
+	},
+
+	"TitleJsonFormat": {
+		"prefix": "tit",
+		"body": [
+			"\"::::::::::$2::::::::::[${1:HEADINGS}]::::::::::::$2:::::::\\n\",",
+			"\"------------------------$3-------------------------\","
+		],
+		"description": "Title json format"
+	},
+
+	"QuteComments": {
+		"prefix": "qcom",
+		"body": [
+			"/****************************************************************",
+			"*         $2           *::${1:PrinterCheatsheet}::*          $2          *",
+			"****************************************************************/",
+		],
+		"description": "Qute comments"
+	},
+
+	"QuteCommentsTEST": {
+		"prefix": "qcomt",
+		"body": [
+			"/****************************************************************",
+			"*         $2           !::${1:TESTQCOM}::!          $2          *",
+			"****************************************************************/",
+		],
+		"description": "Qute comments"
+	},
+
+	"Logger": {
+		"prefix": "uLog",
+		"body": [
+			"Log($1);",
+		],
+		"description": "🤖 Logger -> "
+	},
+
+	"clg": {
+		"prefix": "clg",
+		"body": [
+			"console.log($1);",
+		],
+		"description": "clg"
+	},
+
+	"Doc": {
+		"prefix": "ComDoc",
+		"body": [
+			"/**",
+			" * $1",
+			" */",
+		],
+		"description": "doc"
+	},
+
+	"Printer": {
+		"prefix": "printer",
+		"body": [
+			"const Printer =(...p)=> console.log(...p);",
+			"/* -------------------------------------------- */"
+		],
+		"description": "Printer"
+	},
+
+	"Print": {
+		"prefix": "fnpri",
+		"body": [
+			"Printer($1);",
+		],
+		"description": "Printer"
+	},
+
+	"Replace Statement": {
+		"prefix": "rpl",
+		"body": [
+			":%s/\"/'/g",
+		],
+		"description": "Replace statement for vim"
+	},
+
+	"ufnR2": {
+		"prefix": "uti",
+		"body": [
+			"import React from 'react';\n",
+			"const ${1:$TM_FILENAME_BASE} = () => { return ( <>\n",
+			"\t<h1>${1:$TM_FILENAME_BASE}</h1>$2\n",
+			"</> ) }; export { ${1:$TM_FILENAME_BASE} };",
+		]
+	},
+
+	"stat": {
+		"prefix": "est",
+    "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);"],
+	},
+
+	"console.log('', )": {
+		"prefix": "cl",
+		"body": "console.log(${1:'$2', $3});"
+	},
+
+	"console.error('')": {
+		"prefix": "ce",
+		"body": "console.error($1);"
+	},
+
+	"import moduleName from 'module'": {
+		"prefix": "imp",
+		"body": "import ${2:moduleName} from '${1:module}';"
+	},
+
+	"const moduleName = require('module')": {
+		"prefix": "req",
+		"body": "const ${2:moduleName} = require('${1:module}');"
+	},
+
+	"const { moduleName } = require('module')": {
+		"prefix": "reqd",
+		"body": "const { ${2:moduleName} } = require('${1:module}');"
+	},
+
+	"import { destructuredModule } from 'module'": {
+		"prefix": "imd",
+		"body": "import { $2 } from '${1:module}';"
+	},
+
+	"() => {}": {
+		"prefix": "fn",
+		"body": "const ${1:name} =${2:($3)}=> $4"
+	},
+
+	"a() => {}": {
+		"prefix": "af",
+		"body": "(${1:el}) => ${2:r} "
+	},
+
+	"n() => {}": {
+		"prefix": "nf",
+		"body": "function ${1:name}(${2:param}) {\n\t${3:r}\n} "
+	},
+
+	"async () => {}": {
+		"prefix": "afn",
+		"body": "const ${1:name} = async ${2:($3)} => $4"
+	},
+
+	"const name = value": {
+		"prefix": "c",
+		"body": "const ${1:name} = ${2:value};"
+	},
+
+	"let name = value": {
+		"prefix": "l",
+		"body": "let ${1:name} = ${2:value};"
+	},
+
+	"const name =  { value }": {
+		"prefix": "obj",
+		"body": "const ${1:name} = {\n\t$2\n};"
+	},
+
+	"const name =  [ value, ]": {
+		"prefix": "arr",
+		"body": "const ${1:name} = [${2:value}];$"
+	},
+
+	"const { name } = value": {
+		"prefix": "des",
+		"body": "const { $2 } = $1;"
+	},
+
+	"const [name] = value": {
+		"prefix": "desa",
+		"body": "const [ $2 ] = $1;"
+	},
+
+	"export default": {
+		"prefix": "ed",
+		"body": "export default ${1:$TM_FILENAME_BASE};"
+	},
+
+	"module.exports = {}": {
+		"prefix": "me",
+		"body": "module.exports = {${1:$TM_FILENAME_BASE}};"
+	},
+
+	"describe": {
+		"prefix": "desc",
+		"body": ["describe('$1', () => {", "\t$0", "});", ""]
+	},
+
+	"testBlock": {
+		"prefix": "test",
+		"body": ["test('should $1', () => {", "\t$0", "});", ""]
+	},
+
+	"testAsyncBlock": {
+		"prefix": "testa",
+		"body": ["test('should $1', async () => {", "\t$0", "});", ""]
+	},
+
+	"itBlock": {
+		"prefix": "it",
+		"body": ["it('should $1', () => {", "\t$0", "})", ""]
+	},
+
+	"itAsyncBlock": {
+		"prefix": "ita",
+		"body": ["it('should $1', async () => {", "\t$0", "})", ""]
+	},
+
+	"import React from 'react'": {
+		"prefix": "imr",
+		"body": "import React from \"react\";"
+	},
+
+	"import ReactDOM from \"react-dom\"": {
+		"prefix": "imrd",
+		"body": "import ReactDOM from 'react-dom';\n"
+	},
+
+	"fragment": {
+		"prefix": "fm",
+			"body": "<>\n\t${1:context}\n</>"
+	},
+
+	"outline": {
+	"prefix": "out",
+		"body":	"outline: \"1px solid red\""
+	},
+
+	"tryCatch": {
+		"prefix": "tr",
+		"body": [
+			"try {\t\n\t${3:fn}",
+			"} catch(e) {",
+			"\tconsole.error(e.stack,'\\n[*] '+e.name+' ❌','\\n[*] '+e.message+' ❌');",
+			"}",
+		]
+	},
+
+	"start a component": {
+    "prefix": "rct",
+    "body": [
+      "import styled from 'styled-components' \n",
+      "export default function ${1:$TM_FILENAME_BASE}(){\n",
+      "\treturn (",
+      "\t\t<$3>",
+      "\t\t\t$4",
+      "\t\t</$3>",
+      "\t)",
+      "}\n",
+      "const $3 = styled.$2`",
+      "",
+      "`"
+    ],
+    "description": "Log output to console"
+  },
+	
+	"enter function": {
+		"prefix": "ent",
+		"body": ["console.log(`${0:$TM_FILENAME_BASE}`) \n\n$1"]
+	},
+
+	"ff function": {
+		"prefix": "ff",
+		"body": ["function ${TM_FILENAME_BASE}() {\n",
+			"\t return (\n\t\t$1",
+			"\t);\n",
+			"};\n",
+			"export { ${TM_FILENAME_BASE} }",
+		]
+	},
+
+	"init": {
+		"prefix": "init",
+		"body": ["((e) => console.log(e)) ('Empecemos!') \n$0"]
+		// ((e) => console.log(e)) ('Empecemos!');
+	},
+
+	"util function": {
+		"prefix": "ut",
+		"body": ["export const ${1:$TM_FILENAME_BASE} = () => {", "\t$0", "}"]
+	},
+
+	"webpack config": {
+		"prefix": "wpc",
+		"body": [
+			"const path = require(\"path\");",
+			"const HtmlWebpackPlugin = require(\"html-webpack-plugin\");\n",
+			"module.exports = {",
+			"  entry: \"./src/index.js\",",
+			"  output: {",
+			"    path: path.resolve(__dirname, \"dist\"),",
+			"    filename: \"bundle.js\",",
+			"  },",
+			"  mode: \"development\",",
+			"  resolve: {",
+			"    extensions: [\".js\", \".jsx\"],",
+			"  },",
+			"  module: {",
+			"    rules: [",
+			"      {",
+			"        test: /\\.(js|jsx)$/,",
+			"        exclude: /node_modules/,",
+			"        use: {",
+			"          loader: \"babel-loader\",",
+			"        },",
+			"      },",
+			"      {",
+			"        test: /\\.html$/,",
+			"        use: [",
+			"          {",
+			"            loader: \"html-loader\",",
+			"          },",
+			"        ],",
+			"      },",
+			"    ],",
+			"  },",
+			"  plugins: [",
+			"    new HtmlWebpackPlugin({",
+			"      template: \"./public/index.html\",",
+			"      filename: \"./index.html\",",
+			"    }),",
+			"  ],",
+			"  devServer: {",
+			"    static: {",
+			"\t\t\tdirectory: path.join(__dirname, \"public\"),",
+			"\t\t},",
+			"    compress: true,",
+			"    port: 3009,",
+			"\t}",
+			"};",
+		],
+		"description": "webpack configuration"
+	},
+}
