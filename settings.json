@@ -272,22 +272,22 @@
 		"terminalCursor.foreground": "#ffff00",
 		"editor.selectionHighlightBackground": "#11cdee19",
 		"editor.selectionBackground": "#ff000081",
-		"activityBar.activeBackground": "#1a1a1a",
-		"activityBar.activeBorder": "#606020",
-		"activityBar.background": "#1a1a1a",
+		"activityBar.activeBackground": "#2f3131",
+		"activityBar.activeBorder": "#a738a7",
+		"activityBar.background": "#2f3131",
 		"activityBar.foreground": "#e7e7e7",
 		"activityBar.inactiveForeground": "#e7e7e799",
-		"activityBarBadge.background": "#606020",
+		"activityBarBadge.background": "#a738a7",
 		"activityBarBadge.foreground": "#e7e7e7",
-		"sash.hoverBorder": "#1a1a1a",
-		"statusBar.background": "#000000",
+		"sash.hoverBorder": "#2f3131",
+		"statusBar.background": "#161717",
 		"statusBar.foreground": "#e7e7e7",
-		"statusBarItem.hoverBackground": "#1a1a1a",
-		"statusBarItem.remoteBackground": "#000000",
+		"statusBarItem.hoverBackground": "#2f3131",
+		"statusBarItem.remoteBackground": "#161717",
 		"statusBarItem.remoteForeground": "#e7e7e7",
-		"titleBar.activeBackground": "#000000",
+		"titleBar.activeBackground": "#161717",
 		"titleBar.activeForeground": "#e7e7e7",
-		"titleBar.inactiveBackground": "#00000099",
+		"titleBar.inactiveBackground": "#16171799",
 		"titleBar.inactiveForeground": "#e7e7e799"
 	},
 	"superBG.opacity": 0,
@@ -326,7 +326,6 @@
 	],
 	"editor.inlineSuggest.enabled": true,
 	"zenMode.hideLineNumbers": false,
-	"zenMode.hideTabs": false,
 	"github.copilot.advanced": {
 
 	},
@@ -395,9 +394,6 @@
 		"plaintext"
 	],
 	"indentRainbow.indicatorStyle": "light",
-	"zenMode.centerLayout": false,
-	"zenMode.hideActivityBar": false,
-	"zenMode.hideStatusBar": false,
 	// "java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-11.0.15.10-hotspot",
 	// "java.jdt.ls.java.home": "C:\\Program Files (x86)\\Java\\jre1.8.0_251",
 	"java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-17.0.3.7-hotspot",
@@ -412,11 +408,20 @@
 	"autoBarrel.defaultLanguage": "JavaScript",
 	"hediet.vscode-drawio.codeLinkActivated": true,
 	"kanban.saveFiles.pathPreferences": [
+	
 
 		".vscode/kanban.json",
 		"kanban.json"
 	],
 	"vim.smartRelativeLine": true,
 	"java.debug.settings.showStaticVariables": true,
-	"window.zoomLevel": -1,
+	"emojisense.languages": {
+		"JavaScript": true,
+		"TypeScript": true,
+		"Markdown": true,
+		"JSON": true,
+		"Java": true,
+	},
+	"zenMode.centerLayout": false,
+	"zenMode.hideStatusBar": false
 }
