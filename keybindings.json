@@ -284,5 +284,15 @@
         "key": "ctrl+shift+oem_4",
         "command": "-editor.fold",
         "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "workbench.action.output.toggleOutput",
+        "when": "workbench.panel.output.active"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "-workbench.action.output.toggleOutput",
+        "when": "workbench.panel.output.active"
     }
 ]

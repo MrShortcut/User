@@ -13,7 +13,7 @@
 	"powermode.maxExplosions": 10,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 255,
+	"glassit.alpha": 240,
 	"workbench.sideBar.location": "right",
 	"workbench.editorAssociations": {
 		"*.pdf": "default"
@@ -151,6 +151,10 @@
 			"after": ["g","g","v","G"]
 		},
 		{
+			"before": ["<leader>", "."],
+			"after": ["d","t","."]
+		},
+		{
 			"before": ["<leader>", "'"],
 			"commands": ["editor.foldRecursively"]
 		},
@@ -169,6 +173,14 @@
 		{
 			"before": ["<leader>", "ñ"],
 			"commands": ["workbench.action.terminal.focusPreviousPane"]
+		},
+		{
+			"before": ["<leader>", "u"],
+			"commands": ["workbench.action.output.toggleOutput"],
+		},
+		{
+			"before": ["<leader>", "8"],
+			"commands": ["editor.action.commentLine"],
 		},
 	],
 	"vim.leader": "<space>",
@@ -272,22 +284,22 @@
 		"terminalCursor.foreground": "#ffff00",
 		"editor.selectionHighlightBackground": "#11cdee19",
 		"editor.selectionBackground": "#ff000081",
-		"activityBar.activeBackground": "#2f3131",
-		"activityBar.activeBorder": "#a738a7",
-		"activityBar.background": "#2f3131",
+		"activityBar.activeBackground": "#1a1a1a",
+		"activityBar.activeBorder": "#606020",
+		"activityBar.background": "#1a1a1a",
 		"activityBar.foreground": "#e7e7e7",
 		"activityBar.inactiveForeground": "#e7e7e799",
-		"activityBarBadge.background": "#a738a7",
+		"activityBarBadge.background": "#606020",
 		"activityBarBadge.foreground": "#e7e7e7",
-		"sash.hoverBorder": "#2f3131",
-		"statusBar.background": "#161717",
+		"sash.hoverBorder": "#1a1a1a",
+		"statusBar.background": "#000000",
 		"statusBar.foreground": "#e7e7e7",
-		"statusBarItem.hoverBackground": "#2f3131",
-		"statusBarItem.remoteBackground": "#161717",
+		"statusBarItem.hoverBackground": "#1a1a1a",
+		"statusBarItem.remoteBackground": "#000000",
 		"statusBarItem.remoteForeground": "#e7e7e7",
-		"titleBar.activeBackground": "#161717",
+		"titleBar.activeBackground": "#000000",
 		"titleBar.activeForeground": "#e7e7e7",
-		"titleBar.inactiveBackground": "#16171799",
+		"titleBar.inactiveBackground": "#00000099",
 		"titleBar.inactiveForeground": "#e7e7e799"
 	},
 	"superBG.opacity": 0,
@@ -397,7 +409,7 @@
 	// "java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-11.0.15.10-hotspot",
 	// "java.jdt.ls.java.home": "C:\\Program Files (x86)\\Java\\jre1.8.0_251",
 	"java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-17.0.3.7-hotspot",
-	"workbench.colorTheme": "Vitesse Dark",
+	"workbench.colorTheme": "matrixResolutions4128-3",
 	"js/ts.implicitProjectConfig.experimentalDecorators": true,
 	"errorLens.fontStyleItalic": true,
 	"errorLens.fontWeight": "100",
@@ -423,5 +435,6 @@
 		"Java": true,
 	},
 	"zenMode.centerLayout": false,
-	"zenMode.hideStatusBar": false
+	"zenMode.hideStatusBar": false,
+	"window.zoomLevel": -1
 }
