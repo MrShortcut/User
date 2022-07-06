@@ -13,7 +13,7 @@
 	"powermode.maxExplosions": 10,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 240,
+	"glassit.alpha": 245,
 	"workbench.sideBar.location": "right",
 	"workbench.editorAssociations": {
 		"*.pdf": "default"
@@ -51,7 +51,7 @@
 			"commands": ["workbench.action.nextEditor"]
 		},
 		{
-			"before": ["<S-tab>"],
+			"before": ["<leader>","<tab>"],
 			"commands": ["workbench.action.previousEditor"]
 		},
 	],
@@ -87,16 +87,16 @@
 			"after": ["_"]
 		},
 		{
+			"before": ["<leader>", "l"],
+			"after": ["$"]
+		},
+		{
 			"before": ["<leader>", "z"],
 			"after": ["Z", "Z"]
 		},
 		{
 			"before": ["<leader>", "o"],
 			"after": ["<C-o>"]
-		},
-		{
-			"before": ["<leader>", "l"],
-			"after": ["$"]
 		},
 		{
 			"before": ["<leader>", "C"],
@@ -155,6 +155,10 @@
 			"after": ["d","t","."]
 		},
 		{
+			"before": ["<leader>", "n"],
+			"after": ["c","i","w"]
+		},
+		{
 			"before": ["<leader>", "'"],
 			"commands": ["editor.foldRecursively"]
 		},
@@ -179,7 +183,7 @@
 			"commands": ["workbench.action.output.toggleOutput"],
 		},
 		{
-			"before": ["<leader>", "8"],
+			"before": ["<leader>", "1"],
 			"commands": ["editor.action.commentLine"],
 		},
 	],
@@ -189,7 +193,6 @@
 		"<C-f>": false,
 		"<C-i>": true,
 	},
-
 	"sync.gist": "ddcf965de3de1a942df4631b4f990687",
 	"editor.accessibilitySupport": "off",
 	"[json]": {
@@ -207,7 +210,7 @@
 	"liveServer.settings.donotShowInfoMsg": true,
 	"prettier.useTabs": true,
 	"codesnap.transparentBackground": true,
-	"workbench.preferredDarkColorTheme": "Abyss",
+	"workbench.preferredDarkColorTheme": "Vitesse Dark",
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
@@ -218,7 +221,6 @@
 		"editor.defaultFormatter": "ms-python.python"
 	},
 	"editor.tabSize": 2,
-
 	"better-comments.tags": [
 		{
 			"tag": "!",
@@ -327,7 +329,7 @@
 		"*.json": "json"
 	},
 	"editor.minimap.maxColumn": 80,
-	"editor.lineHeight": 1.5,
+	"editor.lineHeight": 1.6,
 	"workbench.tree.renderIndentGuides": "always",
 	"vim.camelCaseMotion.enable": true,
 	"errorLens.enabled": true,
@@ -339,10 +341,8 @@
 	"editor.inlineSuggest.enabled": true,
 	"zenMode.hideLineNumbers": false,
 	"github.copilot.advanced": {
-
 	},
 	"github.copilot.enable": {
-
 		"*": true,
 		"yaml": false,
 		"plaintext": false,
@@ -354,6 +354,7 @@
 	},
 	"vim.highlightedyank.enable": true,
 	"vim.highlightedyank.textColor": "cyan",
+	"vim.highlightedyank.color": "rgba(250, 240, 170, 0.1)",
 	"[scss]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
@@ -391,10 +392,9 @@
 			"other": "on"
 		} 
 	},
-	"editor.fontWeight": "400",
+	"editor.fontWeight": "310",
 	"editor.renderWhitespace": "trailing",
 	"indentRainbow.colors": [
-
 		"rgba(255,255,64,0.07)",
 		"rgba(127,255,127,0.07)",
 		"rgba(255,127,255,0.07)",
@@ -402,6 +402,7 @@
 	],
 	"better-comments.highlightPlainText": true,
 	"docwriter.hotkey.windows": "Alt + .",
+	"docwriter.style": "Javadoc",
 	"indentRainbow.excludedLanguages": [
 		"plaintext"
 	],
@@ -409,7 +410,7 @@
 	// "java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-11.0.15.10-hotspot",
 	// "java.jdt.ls.java.home": "C:\\Program Files (x86)\\Java\\jre1.8.0_251",
 	"java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-17.0.3.7-hotspot",
-	"workbench.colorTheme": "matrixResolutions4128-3",
+	"workbench.colorTheme": "Solarized Light",
 	"js/ts.implicitProjectConfig.experimentalDecorators": true,
 	"errorLens.fontStyleItalic": true,
 	"errorLens.fontWeight": "100",
@@ -420,8 +421,6 @@
 	"autoBarrel.defaultLanguage": "JavaScript",
 	"hediet.vscode-drawio.codeLinkActivated": true,
 	"kanban.saveFiles.pathPreferences": [
-	
-
 		".vscode/kanban.json",
 		"kanban.json"
 	],
@@ -436,5 +435,9 @@
 	},
 	"zenMode.centerLayout": false,
 	"zenMode.hideStatusBar": false,
-	"window.zoomLevel": -1
+	"security.workspace.trust.banner": "always",
+	"security.workspace.trust.startupPrompt": "always",
+	"eslint.format.enable": true,
+	"eslint.lintTask.enable": true,
+	"window.zoomLevel": -1,
 }

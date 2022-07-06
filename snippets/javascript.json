@@ -13,6 +13,17 @@
 	// 	"description": "Log output to console"
 	// },
 
+	"Print to console": {
+		"prefix": "mantra",
+		"body": [
+			"/*-------------<AAA>-<Mantra>-<AAA>------------*/",
+			"// Arrange ->",
+			"// Act ->",
+			"// Assert ->",
+		],
+		"description": "Mantra AAA"
+	},
+
 	"QuteCommentsForDate": {
 		"prefix": "qdat",
 		"body": [
@@ -139,7 +150,7 @@
 			"\t\tbomb: '💣',",
 			"};",
 		],
-		"description": "🤖 Logger -> "
+		"description": "🤖 Logger Emoji Collection -> "
 	},
 
 	"Loggerf": {
@@ -155,7 +166,7 @@
 			"\t\t:\tconsole.log(l, o, e);",
 			"};",
 		],
-		"description": "🤖 Logger -> "
+		"description": "🤖 Logger -> FUNCTION "
 	},
 
 	"TitleJsonFormat": {
@@ -174,7 +185,7 @@
 			"*         $2           *::${1:PrinterCheatsheet}::*          $2          *",
 			"****************************************************************/",
 		],
-		"description": "Qute comments"
+		"description": "Qute comments standard"
 	},
 
 	"QuteCommentsTEST": {
@@ -184,7 +195,7 @@
 			"*         $2           !::${1:TESTQCOM}::!          $2          *",
 			"****************************************************************/",
 		],
-		"description": "Qute comments"
+		"description": "Qute comments for TEST"
 	},
 
 	"Logger": {
@@ -192,7 +203,7 @@
 		"body": [
 			"Log($1);",
 		],
-		"description": "🤖 Logger -> "
+		"description": "🤖 Logger -> Log(@param)"
 	},
 
 	"clg": {
@@ -200,7 +211,7 @@
 		"body": [
 			"console.log($1);",
 		],
-		"description": "clg"
+		"description": "console.log(@param)"
 	},
 
 	"Doc": {
@@ -210,7 +221,7 @@
 			" * $1",
 			" */",
 		],
-		"description": "doc"
+		"description": "doc Documentation comments"
 	},
 
 	"Printer": {
@@ -219,7 +230,7 @@
 			"const Printer =(...p)=> console.log(...p);",
 			"/* -------------------------------------------- */"
 		],
-		"description": "Printer"
+		"description": "Printer(...@param) -> FN"
 	},
 
 	"Print": {
@@ -227,7 +238,7 @@
 		"body": [
 			"Printer($1);",
 		],
-		"description": "Printer"
+		"description": "Printer -> Printer(@param)"
 	},
 
 	"Replace Statement": {
