@@ -13,7 +13,7 @@
 	// 	"description": "Log output to console"
 	// },
 
-	"Print to console": {
+	"matra for testing": {
 		"prefix": "mantra",
 		"body": [
 			"/*-------------<AAA>-<Mantra>-<AAA>------------*/",
@@ -90,7 +90,7 @@
 		"description": "🤖 Logger -> "
 	},
 
-	"EmojiPediaLogger": {
+	"EmojiPediaLogger emojis log": {
 		"prefix": "eLog",
 		"body": [
 			"/**",
@@ -153,7 +153,7 @@
 		"description": "🤖 Logger Emoji Collection -> "
 	},
 
-	"Loggerf": {
+	"Logger fLog": {
 		"prefix": "fLog",
 		"body": [
 			"/** 🤖",
@@ -178,7 +178,7 @@
 		"description": "Title json format"
 	},
 
-	"QuteComments": {
+	"QuteComments [*]": {
 		"prefix": "qcom",
 		"body": [
 			"/****************************************************************",
@@ -188,7 +188,7 @@
 		"description": "Qute comments standard"
 	},
 
-	"QuteCommentsTEST": {
+	"QuteCommentsTEST [!]": {
 		"prefix": "qcomt",
 		"body": [
 			"/****************************************************************",
@@ -198,7 +198,7 @@
 		"description": "Qute comments for TEST"
 	},
 
-	"Logger": {
+	"Logger Log()": {
 		"prefix": "uLog",
 		"body": [
 			"Log($1);",
@@ -206,7 +206,7 @@
 		"description": "🤖 Logger -> Log(@param)"
 	},
 
-	"clg": {
+	"clg console.log($1)": {
 		"prefix": "clg",
 		"body": [
 			"console.log($1);",
@@ -224,7 +224,7 @@
 		"description": "doc Documentation comments"
 	},
 
-	"Printer": {
+	"Printer const =()=>": {
 		"prefix": "printer",
 		"body": [
 			"const Printer =(...p)=> console.log(...p);",
@@ -233,7 +233,7 @@
 		"description": "Printer(...@param) -> FN"
 	},
 
-	"Print": {
+	"Print()": {
 		"prefix": "fnpri",
 		"body": [
 			"Printer($1);",
@@ -249,104 +249,124 @@
 		"description": "Replace statement for vim"
 	},
 
-	"ufnR2": {
+	"ufnR2 const () => {} export": {
 		"prefix": "uti",
 		"body": [
 			"import React from 'react';\n",
 			"const ${1:$TM_FILENAME_BASE} = () => { return ( <>\n",
 			"\t<h1>${1:$TM_FILENAME_BASE}</h1>$2\n",
 			"</> ) }; export { ${1:$TM_FILENAME_BASE} };",
-		]
+		],
+		"description": "imrd -> React Component export {}"
 	},
 
 	"stat": {
 		"prefix": "est",
     "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);"],
+		"description": "const [] = useState()"
 	},
 
 	"console.log('', )": {
 		"prefix": "cl",
-		"body": "console.log(${1:'$2', $3});"
+		"body": "console.log(${1:'$2', $3});",
+		"description": "console.log(@param)"
 	},
 
 	"console.error('')": {
 		"prefix": "ce",
-		"body": "console.error($1);"
+		"body": "console.error($1);",
+		"description": "console.error(@param)"
+
 	},
 
-	"import moduleName from 'module'": {
+	"normal import moduleName from 'module'": {
 		"prefix": "imp",
-		"body": "import ${2:moduleName} from '${1:module}';"
+		"body": "import ${2:moduleName} from '${1:module}';",
+		"description": "normal import module"
 	},
 
 	"const moduleName = require('module')": {
 		"prefix": "req",
-		"body": "const ${2:moduleName} = require('${1:module}');"
+		"body": "const ${2:moduleName} = require('${1:module}');",
+		"description": "require module"
 	},
 
 	"const { moduleName } = require('module')": {
-		"prefix": "reqd",
-		"body": "const { ${2:moduleName} } = require('${1:module}');"
+		"prefix": "reqm",
+		"body": "const { ${2:moduleName} } = require('${1:module}');",
+		"description": "require module"
 	},
 
 	"import { destructuredModule } from 'module'": {
-		"prefix": "imd",
-		"body": "import { $2 } from '${1:module}';"
+		"prefix": "impm",
+		"body": "import { $2 } from '${1:module}';",
+		"description": "import statement"
+	},
+
+	"export const () => {}": {
+		"prefix": "fn",
+		"body": "export const ${1:name} = ${2:($3)} => $4",
+		"description": "export const annon () => {}"
 	},
 
 	"() => {}": {
-		"prefix": "fn",
-		"body": "export const ${1:name} = ${2:($3)} => $4"
-	},
-
-	"a() => {}": {
 		"prefix": "af",
-		"body": "(${1:el}) => ${2:r} "
+		"body": "(${1:el}) => ${2:r}",
+		"description": "annon () => {}"
 	},
 
-	"n() => {}": {
+	"function () => {}": {
 		"prefix": "nf",
-		"body": "function ${1:name}(${2:param}) {\n\t${3:r}\n} "
+		"body": "function ${1:name} (${2:param}) {\n\t${3:r}\n}",
+		"description": "function [name] () {}"
 	},
 
 	"async () => {}": {
 		"prefix": "afn",
-		"body": "const ${1:name} = async ${2:($3)} => $4"
+		"body": "const ${1:name} = async ${2:($3)} => $4",
+		"description": "async () => {}"
 	},
 
 	"const name = value": {
 		"prefix": "c",
-		"body": "const ${1:name} = ${2:value};"
+		"body": "const ${1:name} = ${2:value};",
+		"description": "const line"
 	},
 
 	"let name = value": {
 		"prefix": "l",
-		"body": "let ${1:name} = ${2:value};"
+		"body": "let ${1:name} = ${2:value};",
+		"description": "let line"
 	},
 
-	"const name =  { value }": {
+	"Object const name =  { value }": {
 		"prefix": "obj",
-		"body": "const ${1:name} = {\n\t$2\n};"
+		"body": "const ${1:name} = {\n\t$2\n};",
+		"description": "{}"
 	},
 
 	"const name =  [ value, ]": {
 		"prefix": "arr",
-		"body": "const ${1:name} = [${2:value}];$"
+		"body": "const ${1:name} = [${2:value}]",
+		"description": "[]"
 	},
 
 	"const { name } = value": {
 		"prefix": "des",
-		"body": "const { $2 } = $1;"
+		"body": "const { $2 } = $1;",
+		"description": "{} = destructuring"
 	},
 
 	"const [name] = value": {
 		"prefix": "desa",
-		"body": "const [ $2 ] = $1;"
+		"body": "const [ $2 ] = $1;",
+		"description": "[] = destructuring"
 	},
 
 	"export default": {
 		"prefix": "ed",
-		"body": "export default ${1:$TM_FILENAME_BASE};"
+		"body": "export default ${1:$TM_FILENAME_BASE};",
+		"description": "export default"
 	},
 
 	"module.exports = {}": {
@@ -354,49 +374,58 @@
 		"body": "module.exports = {${1:$TM_FILENAME_BASE}};"
 	},
 
-	"describe": {
+	"describe ('', ()=> {})": {
 		"prefix": "desc",
-		"body": ["describe('$1', () => {", "\t$0", "});", ""]
+		"body": ["describe('$1', () => {", "\t$0", "});", ""],
+		"description": "describe block"
 	},
 
-	"testBlock": {
+	"test ('', () => {})": {
 		"prefix": "test",
-		"body": ["test('should $1', () => {", "\t$0", "});", ""]
+		"body": ["test('should $1', () => {", "\t$0", "});", ""],
+		"description": "test block"
 	},
 
-	"testAsyncBlock": {
+	"test ('', async () => {})": {
 		"prefix": "testa",
-		"body": ["test('should $1', async () => {", "\t$0", "});", ""]
+		"body": ["test('should $1', async () => {", "\t$0", "});", ""],
+		"description": "tset async block"
 	},
 
-	"itBlock": {
+	"it('', () => {})": {
 		"prefix": "it",
-		"body": ["it('should $1', () => {", "\t$0", "})", ""]
+		"body": ["it('should $1', () => {", "\t$0", "})", ""],
+		"description": "it block"
 	},
 
-	"itAsyncBlock": {
+	"it('', async () => {})": {
 		"prefix": "ita",
-		"body": ["it('should $1', async () => {", "\t$0", "})", ""]
+		"body": ["it('should $1', async () => {", "\t$0", "})", ""],
+		"description": "it async block"
 	},
 
 	"import React from 'react'": {
 		"prefix": "imr",
-		"body": "import React from \"react\";"
+		"body": "import React from 'react'",
+		"description": "import React from 'react'"
 	},
 
-	"import ReactDOM from \"react-dom\"": {
+	"import ReactDOM from 'react-dom'": {
 		"prefix": "imrd",
-		"body": "import ReactDOM from 'react-dom';\n"
+		"body": "import ReactDOM from 'react-dom';\n",
+		"description": "ReactDOM react-dom"
 	},
 
-	"fragment": {
+	"<></>": {
 		"prefix": "fm",
-			"body": "<>\n\t${1:context}\n</>"
+		"body": "<>\n\t${1:context}\n</>",
+		"description": "<> \n \n </>"
 	},
 
 	"outline": {
 	"prefix": "out",
-		"body":	"outline: \"1px solid red\""
+		"body":	"outline: \"1px solid red\"",
+		"description": "ouline 1px solid red"
 	},
 
 	"tryCatch": {
@@ -406,10 +435,11 @@
 			"} catch(e) {",
 			"\tconsole.error(e.stack,'\\n[*] '+e.name+' ❌','\\n[*] '+e.message+' ❌');",
 			"}",
-		]
+		],
+		"description": "try catch block"
 	},
 
-	"start a component": {
+	"React Component sTyled": {
     "prefix": "rct",
     "body": [
       "import styled from 'styled-components' \n",
@@ -426,31 +456,28 @@
     ],
     "description": "Log output to console"
   },
-	
-	"enter function": {
-		"prefix": "ent",
-		"body": ["console.log(`${0:$TM_FILENAME_BASE}`) \n\n$1"]
-	},
 
-	"ff function": {
+	"function () {} export": {
 		"prefix": "ff",
-		"body": ["function ${TM_FILENAME_BASE}() {\n",
+		"body": ["function ${TM_FILENAME_BASE} () {\n",
 			"\t return (\n\t\t$1",
 			"\t);\n",
 			"};\n",
 			"export { ${TM_FILENAME_BASE} }",
-		]
+		],
+		"description": "React function"
 	},
 
-	"init": {
+	"init ((e) => console.log(e)) ('Empecemos!');": {
 		"prefix": "init",
-		"body": ["((e) => console.log(e)) ('Empecemos!') \n$0"]
-		// ((e) => console.log(e)) ('Empecemos!');
+		"body": ["((e) => console.log(e)) ('Empecemos!') \n$0"],
+		"description": "((e) => console.log(e)) ('Empecemos!');"
 	},
 
-	"util function": {
+	"util export const () => {}": {
 		"prefix": "ut",
-		"body": ["export const ${1:$TM_FILENAME_BASE} = () => {", "\t$0", "}"]
+		"body": ["export const ${1:$TM_FILENAME_BASE} = () => {", "\t$0", "}"],
+		"description": "util function for React"
 	},
 
 	"webpack config": {

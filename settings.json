@@ -13,7 +13,7 @@
 	"powermode.maxExplosions": 10,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 245,
+	"glassit.alpha": 255,
 	"workbench.sideBar.location": "right",
 	"workbench.editorAssociations": {
 		"*.pdf": "default"
@@ -127,6 +127,22 @@
 			"after": ["d","t", "("]
 		},
 		{
+			"before": ["<leader>", "."],
+			"after": ["d","t","."]
+		},
+		{
+			"before": ["<leader>", ","],
+			"after": ["d","t",",","s","<Esc>"]
+		},
+		{
+			"before": ["<leader>", "2", "}"],
+			"after": ["d","t","]"]
+		},
+		{
+			"before": ["<leader>", "}"],
+			"after": ["d","t","}"]
+		},
+		{
 			"before": ["<leader>", "j"],
 			"after": ["9","j"]
 		},
@@ -151,12 +167,12 @@
 			"after": ["g","g","v","G"]
 		},
 		{
-			"before": ["<leader>", "."],
-			"after": ["d","t","."]
-		},
-		{
 			"before": ["<leader>", "n"],
 			"after": ["c","i","w"]
+		},
+		{
+			"before": ["<leader>", "N"],
+			"after": ["c","i","t"]
 		},
 		{
 			"before": ["<leader>", "'"],
@@ -180,7 +196,7 @@
 		},
 		{
 			"before": ["<leader>", "u"],
-			"commands": ["workbench.action.output.toggleOutput"],
+			"commands": ["workbench.action.output.toggleOutput", "workbench.action.output.toggleOutput"],
 		},
 		{
 			"before": ["<leader>", "1"],
@@ -203,7 +219,7 @@
 	},
 	"prettier.tabWidth": 2,
 	"markdown-preview-enhanced.codeBlockTheme": "darcula.css",
-	"markdown-preview-enhanced.previewTheme": "github-dark.css",
+	"markdown-preview-enhanced.previewTheme": "atom-dark.css",
 	"markdown-preview-enhanced.revealjsTheme": "night.css",
 	"editor.fontSize": 20,
 	"oneDarkPro.bold": true,
@@ -328,7 +344,7 @@
 	"files.associations": {
 		"*.json": "json"
 	},
-	"editor.minimap.maxColumn": 80,
+	"editor.minimap.maxColumn": 90,
 	"editor.lineHeight": 1.6,
 	"workbench.tree.renderIndentGuides": "always",
 	"vim.camelCaseMotion.enable": true,
@@ -340,13 +356,12 @@
 	],
 	"editor.inlineSuggest.enabled": true,
 	"zenMode.hideLineNumbers": false,
-	"github.copilot.advanced": {
-	},
+	"github.copilot.advanced": {},
 	"github.copilot.enable": {
 		"*": true,
 		"yaml": false,
 		"plaintext": false,
-		"markdown": true 
+		"markdown": true
 	},
 	"debug.console.wordWrap": false,
 	"[typescriptreact]": {
@@ -385,7 +400,7 @@
 	"[markdown]": {
 		"editor.unicodeHighlight.ambiguousCharacters": false,
 		"editor.unicodeHighlight.invisibleCharacters": false,
-		"editor.wordWrap": "on",
+		"editor.wordWrap": "off",
 		"editor.quickSuggestions":{
 			"comments": "on",
 			"strings": "on",
@@ -410,7 +425,9 @@
 	// "java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-11.0.15.10-hotspot",
 	// "java.jdt.ls.java.home": "C:\\Program Files (x86)\\Java\\jre1.8.0_251",
 	"java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-17.0.3.7-hotspot",
-	"workbench.colorTheme": "Solarized Light",
+	"workbench.colorTheme": "Dark SynthWave '84",
+	"synthwave84.brightness": 1,
+	"darkSynthwave84.whatsNew": false,
 	"js/ts.implicitProjectConfig.experimentalDecorators": true,
 	"errorLens.fontStyleItalic": true,
 	"errorLens.fontWeight": "100",
