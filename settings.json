@@ -13,7 +13,7 @@
 	"powermode.maxExplosions": 10,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 255,
+	"glassit.alpha": 245,
 	"workbench.sideBar.location": "right",
 	"workbench.editorAssociations": {
 		"*.pdf": "default"
@@ -175,6 +175,10 @@
 			"after": ["c","i","t"]
 		},
 		{
+			"before": ["<leader>", "B"],
+			"after": ["c","i","B"]
+		},
+		{
 			"before": ["<leader>", "'"],
 			"commands": ["editor.foldRecursively"]
 		},
@@ -219,7 +223,7 @@
 	},
 	"prettier.tabWidth": 2,
 	"markdown-preview-enhanced.codeBlockTheme": "darcula.css",
-	"markdown-preview-enhanced.previewTheme": "atom-dark.css",
+	"markdown-preview-enhanced.previewTheme": "medium.css",
 	"markdown-preview-enhanced.revealjsTheme": "night.css",
 	"editor.fontSize": 20,
 	"oneDarkPro.bold": true,
@@ -338,24 +342,48 @@
 	"powermode.explosions.duration": 400,
 	"powermode.combo.counterEnabled": "show",
 	"powermode.presets": "exploding-rift",
+
+	"emmet.excludeLanguages":[],
 	"emmet.includeLanguages": {
-		"javascript": "javascriptreact"
+		"javascript": "javascriptreact",
+		"markdown": "html"
 	},
+	"emmet.showSuggestionsAsSnippets": true,
+	"emmet.triggerExpansionOnTab": true,
+	"editor.snippetSuggestions": "top",
+	"emmet.useInlineCompletions": true,
+	"[markdown]": {
+		"editor.unicodeHighlight.ambiguousCharacters": false,
+		"editor.unicodeHighlight.invisibleCharacters": false,
+		"editor.wordWrap": "on",
+		"editor.quickSuggestions": {
+			"comments": "on",
+			"strings": "on",
+			"other": "off",
+		}
+	},
+
 	"files.associations": {
 		"*.json": "json"
 	},
+
 	"editor.minimap.maxColumn": 90,
+
 	"editor.lineHeight": 1.6,
+
 	"workbench.tree.renderIndentGuides": "always",
 	"vim.camelCaseMotion.enable": true,
+
 	"errorLens.enabled": true,
 	"errorLens.enabledDiagnosticLevels": [
 		"error",
 		"info",
 		"warning"
 	],
+
 	"editor.inlineSuggest.enabled": true,
 	"zenMode.hideLineNumbers": false,
+
 	"github.copilot.advanced": {},
 	"github.copilot.enable": {
 		"*": true,
@@ -363,6 +391,7 @@
 		"plaintext": false,
 		"markdown": true
 	},
+
 	"debug.console.wordWrap": false,
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -397,17 +426,7 @@
 			"\\)"
 		]
 	],
-	"[markdown]": {
-		"editor.unicodeHighlight.ambiguousCharacters": false,
-		"editor.unicodeHighlight.invisibleCharacters": false,
-		"editor.wordWrap": "off",
-		"editor.quickSuggestions":{
-			"comments": "on",
-			"strings": "on",
-			"other": "on"
-		} 
-	},
-	"editor.fontWeight": "310",
+	"editor.fontWeight": "350",
 	"editor.renderWhitespace": "trailing",
 	"indentRainbow.colors": [
 		"rgba(255,255,64,0.07)",
@@ -425,8 +444,7 @@
 	// "java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-11.0.15.10-hotspot",
 	// "java.jdt.ls.java.home": "C:\\Program Files (x86)\\Java\\jre1.8.0_251",
 	"java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-17.0.3.7-hotspot",
-	"workbench.colorTheme": "Dark SynthWave '84",
-	"synthwave84.brightness": 1,
+	"synthwave84.brightness": 4,
 	"darkSynthwave84.whatsNew": false,
 	"js/ts.implicitProjectConfig.experimentalDecorators": true,
 	"errorLens.fontStyleItalic": true,
@@ -456,5 +474,13 @@
 	"security.workspace.trust.startupPrompt": "always",
 	"eslint.format.enable": true,
 	"eslint.lintTask.enable": true,
+	"emmet.preferences": {
+	
+	},
 	"window.zoomLevel": -1,
+	"workbench.colorTheme": "Dark SynthWave '84",
+	"settingsSync.ignoredExtensions": [
+		"aaronyoung.dark-synthwave-vscode",
+		"robbowen.synthwave-vscode"
+	],
 }

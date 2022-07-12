@@ -4,6 +4,7 @@
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
 	// Example:
+
 	// "Print to console": {
 	// 	"prefix": "log",
 	// 	"body": [
@@ -12,6 +13,23 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// },
+
+	"fill new Array": {
+		"prefix": "fillA",
+		"body": [
+			"const ${2:arr} = new Array(${1:4}).fill(null).map((v,i) => i)",
+			"$3"
+		],
+		"description": "new Array().fill()"
+	},
+
+	"timeStamp () => {}": {
+		"prefix": "timeS",
+		"body": [
+			"const timeStamp = () => (new Date()).toLocaleString()"
+		],
+		"description": "() => (new Date()).toLocaleString()"
+	},
 
 	"matra for testing": {
 		"prefix": "mantra",
@@ -382,7 +400,7 @@
 
 	"test ('', () => {})": {
 		"prefix": "test",
-		"body": ["test('should $1', () => {", "\t$0", "});", ""],
+		"body": ["test('should $1', () => {", "\t$0", "\texpect($2).toBe($3)\n});", ""],
 		"description": "test block"
 	},
 
