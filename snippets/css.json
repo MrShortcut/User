@@ -14,7 +14,7 @@
 	// 	"description": "Log output to console"
 	// },
 
-	"Center content Div": {
+	"cdiv center div flex": {
 		"prefix": "cdiv",
 		"body": [
 			"display: flex;",
@@ -24,9 +24,34 @@
 		"description": "Center content"
 	},
 
-	"dev css":{
+	"-out outline: 1px solid red;":{
 		"prefix": "-out",
 		"body": [ "outline: 1px solid red;" ],
 		"description": "dev css"
 	},
+
+	"qtitle :: @{title} :: ": {
+		"prefix": "qtit",
+		"body": [
+			"/* ------ :: @${1:POKEMONLIST} :: ------- */",
+		],
+		"description": "title :: @{} :: "
+	},
+
+	"grid 4, 1fr": {
+		"prefix": "grid4",
+		"body": [
+			".${1:list} {",
+			" max-width: ${2:1124px};",
+			"	display: grid;",
+			"	grid-template-columns: repeat(4, 1fr);",
+			"	gap: 2rem;",
+			" margin: 0 auto;",
+			" justify-content: center;",
+			"}",
+		],
+		"description": "grid column 4fr"
+	},
+
+
 }

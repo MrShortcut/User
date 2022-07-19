@@ -1,28 +1,33 @@
 {
 	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "vscode.typescript-language-features",
+		"editor.formatOnSave": true
 	},
+	"javascript.format.insertSpaceAfterConstructor": true,
+	"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+	"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+
 	"files.autoSave": "afterDelay",
 	"liveServer.settings.CustomBrowser": "chrome",
 	"kite.showWelcomeNotificationOnStartup": false,
-	"editor.suggestSelection": "first",
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-	"editor.fontLigatures": true,
-	"editor.tabCompletion": "on",
 	"powermode.enabled": true,
-	"powermode.maxExplosions": 10,
+	"powermode.explosions.maxExplosions": 1,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
 	"glassit.alpha": 245,
-	"workbench.sideBar.location": "right",
-	"workbench.editorAssociations": {
-		"*.pdf": "default"
-	},
+
 	"vim.easymotion": true,
 	"vim.incsearch": true,
 	"vim.useSystemClipboard": true,
 	"vim.useCtrlKeys": true,
 	"vim.hlsearch": true,
+	"vim.highlightedyank.enable": true,
+	"vim.highlightedyank.textColor": "cyan",
+	"vim.highlightedyank.color": "rgba(250, 240, 170, 0.1)",
+	"vim.smartRelativeLine": true,
+	"vim.camelCaseMotion.enable": true,
+	"vim.autoindent": true,
 	"vim.insertModeKeyBindings": [
 		{
 			"before": ["j", "j"],
@@ -51,20 +56,20 @@
 			"commands": ["workbench.action.nextEditor"]
 		},
 		{
-			"before": ["<leader>","<tab>"],
+			"before": ["<leader>", "<tab>"],
 			"commands": ["workbench.action.previousEditor"]
-		},
+		}
 	],
 	"vim.visualModeKeyBindings": [
-			{
-				"before": [">"],
-				"after": [">", "g", "v"],
-			},
-			{
-				"before": ["<"],
-				"after": ["<", "g", "v"],
-			}
-		],
+		{
+			"before": [">"],
+			"after": [">", "g", "v"]
+		},
+		{
+			"before": ["<"],
+			"after": ["<", "g", "v"]
+		}
+	],
 	"vim.normalModeKeyBindingsNonRecursive": [
 		{
 			"before": ["<leader>", "w"],
@@ -100,83 +105,91 @@
 		},
 		{
 			"before": ["<leader>", "C"],
-			"after": ["d","t", "'"]
+			"after": ["d", "t", "'"]
 		},
 		{
 			"before": ["<leader>", "c"],
-			"after": ["d","t", "\""]
+			"after": ["d", "t", "\""]
 		},
 		{
 			"before": ["<leader>", "m"],
-			"after": ["d","t", ">"]
+			"after": ["d", "t", ">"]
 		},
 		{
 			"before": ["<leader>", "M"],
-			"after": ["d","t", "<"]
+			"after": ["d", "t", "<"]
 		},
 		{
 			"before": ["<leader>", "p"],
-			"after": ["d","t", ";"]
+			"after": ["d", "t", ";"]
 		},
 		{
 			"before": ["<leader>", "9"],
-			"after": ["d","t", ")"]
+			"after": ["d", "t", ")"]
 		},
 		{
 			"before": ["<leader>", "8"],
-			"after": ["d","t", "("]
+			"after": ["d", "t", "("]
 		},
 		{
 			"before": ["<leader>", "."],
-			"after": ["d","t","."]
+			"after": ["d", "t", "."]
 		},
 		{
 			"before": ["<leader>", ","],
-			"after": ["d","t",",","s","<Esc>"]
+			"after": ["d", "t", ",", "s", "<Esc>"]
 		},
 		{
 			"before": ["<leader>", "2", "}"],
-			"after": ["d","t","]"]
+			"after": ["d", "t", "]"]
 		},
 		{
 			"before": ["<leader>", "}"],
-			"after": ["d","t","}"]
+			"after": ["d", "t", "}"]
+		},
+		{
+			"before": ["<leader>", "7"],
+			"after": ["d", "t", "/"]
 		},
 		{
 			"before": ["<leader>", "j"],
-			"after": ["9","j"]
+			"after": ["9", "j"]
 		},
 		{
 			"before": ["<leader>", "k"],
-			"after": ["9","k"]
+			"after": ["9", "k"]
 		},
 		{
 			"before": ["<leader>", "g"],
-			"after": ["G","G"]
+			"after": ["G", "G"]
 		},
 		{
 			"before": ["<leader>", "b"],
-			"after": ["i","`"]
+			"after": ["i", "`"]
 		},
 		{
 			"before": ["<leader>", "backspace"],
-			"after": ["g","g","d","G"]
+			"after": ["g", "g", "d", "G"]
 		},
 		{
 			"before": ["<leader>", "a"],
-			"after": ["g","g","v","G"]
+			"after": ["g", "g", "v", "G"]
 		},
 		{
 			"before": ["<leader>", "n"],
-			"after": ["c","i","w"]
+			"after": ["c", "i", "w"]
 		},
 		{
 			"before": ["<leader>", "N"],
-			"after": ["c","i","t"]
+			"after": ["c", "i", "t"]
 		},
 		{
 			"before": ["<leader>", "B"],
-			"after": ["c","i","B"]
+			"after": ["c", "i", "B"]
+		},
+		{
+			"before": ["<leader>", "2", "b"],
+			"after": ["c", "i", "b"]
 		},
 		{
 			"before": ["<leader>", "'"],
@@ -192,6 +205,10 @@
 		},
 		{
 			"before": ["<leader>", "s"],
+			"commands": ["workbench.action.files.save"]
+		},
+		{
+			"before": ["<leader>", "S"],
 			"commands": ["workbench.view.search"]
 		},
 		{
@@ -200,47 +217,79 @@
 		},
 		{
 			"before": ["<leader>", "u"],
-			"commands": ["workbench.action.output.toggleOutput", "workbench.action.output.toggleOutput"],
+			"commands": [
+				"workbench.action.output.toggleOutput",
+				"workbench.action.output.toggleOutput"
+			]
 		},
 		{
 			"before": ["<leader>", "1"],
-			"commands": ["editor.action.commentLine"],
-		},
+			"commands": ["editor.action.commentLine"]
+		}
 	],
 	"vim.leader": "<space>",
 	"vim.handleKeys": {
 		"<C-a>": false,
 		"<C-f>": false,
-		"<C-i>": true,
+		"<C-i>": true
 	},
 	"sync.gist": "ddcf965de3de1a942df4631b4f990687",
-	"editor.accessibilitySupport": "off",
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+
 	"prettier.tabWidth": 2,
+	"prettier.trailingComma": "none",
+	"prettier.useTabs": true,
+
 	"markdown-preview-enhanced.codeBlockTheme": "darcula.css",
 	"markdown-preview-enhanced.previewTheme": "medium.css",
 	"markdown-preview-enhanced.revealjsTheme": "night.css",
-	"editor.fontSize": 20,
+
 	"oneDarkPro.bold": true,
 	"liveServer.settings.donotShowInfoMsg": true,
-	"prettier.useTabs": true,
 	"codesnap.transparentBackground": true,
-	"workbench.preferredDarkColorTheme": "Vitesse Dark",
 	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "vscode.typescript-language-features",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			// For ESLint
+			"source.fixAll.eslint": true,
+			// For TSLint
+			"source.fixAll.tslint": true,
+			// For Stylelint
+			"source.fixAll.stylelint": true,
+			"typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+			"editor.formatOnType": true
+		}
 	},
+	"typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+	"typescript.format.insertSpaceAfterConstructor": true,
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			// For ESLint
+			"source.fixAll.eslint": true,
+			// For TSLint
+			"source.fixAll.tslint": true,
+			// For Stylelint
+			"typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+			"source.fixAll.stylelint": true,
+			"editor.formatOnType": true
+		}
+	},
+	"vitest.enable": true,
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.python"
 	},
-	"editor.tabSize": 2,
 	"better-comments.tags": [
 		{
 			"tag": "!",
@@ -285,7 +334,7 @@
 			"underline": false,
 			"backgroundColor": "black",
 			"bold": true,
-			"italic": true 
+			"italic": true
 		},
 		{
 			"tag": "*",
@@ -298,68 +347,94 @@
 		}
 	],
 
+	"editor.suggestSelection": "first",
+	"editor.fontLigatures": true,
+	"editor.tabCompletion": "on",
+	"editor.fontWeight": "360",
+	"editor.renderWhitespace": "trailing",
 	"editor.fontFamily": "'Cascadia Code','Input Mono','Hack Nerd Font',Consolas,'Lucida Console', Monospace",
 	"editor.cursorBlinking": "expand",
 	"editor.cursorSmoothCaretAnimation": true,
+	"editor.codeLensFontFamily": "Consolas",
+	"editor.smoothScrolling": true,
+	"editor.guides.bracketPairs": "active",
+	"editor.snippetSuggestions": "top",
+
+	"editor.accessibilitySupport": "off",
+	"editor.fontSize": 20,
+	"editor.tabSize": 2,
+	"editor.minimap.maxColumn": 90,
+	"editor.lineHeight": 1.618,
+	"editor.inlineSuggest.enabled": true,
+	"editor.bracketPairColorization.enabled": true,
+
+	"workbench.preferredDarkColorTheme": "Vitesse Dark",
+	"workbench.preferredHighContrastColorTheme": "matrixResolutions4128",
+	"workbench.preferredLightColorTheme": "Default Dark+",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.colorTheme": "Dark SynthWave '84",
+	"workbench.tree.renderIndentGuides": "always",
+	"workbench.sideBar.location": "right",
+	"workbench.editorAssociations": {
+		"*.pdf": "analyticsignal.preview-pdf"
+	},
 	"workbench.colorCustomizations": {
 		"editorCursor.foreground": "#11ecff",
 		"terminalCursor.foreground": "#ffff00",
 		"editor.selectionHighlightBackground": "#11cdee19",
 		"editor.selectionBackground": "#ff000081",
-		"activityBar.activeBackground": "#1a1a1a",
-		"activityBar.activeBorder": "#606020",
-		"activityBar.background": "#1a1a1a",
+		"activityBar.activeBackground": "#5510bf",
+		"activityBar.activeBorder": "#000000",
+		"activityBar.background": "#5510bf",
 		"activityBar.foreground": "#e7e7e7",
 		"activityBar.inactiveForeground": "#e7e7e799",
-		"activityBarBadge.background": "#606020",
+		"activityBarBadge.background": "#000000",
 		"activityBarBadge.foreground": "#e7e7e7",
-		"sash.hoverBorder": "#1a1a1a",
-		"statusBar.background": "#000000",
+		"sash.hoverBorder": "#5510bf",
+		"statusBar.background": "#400c90",
 		"statusBar.foreground": "#e7e7e7",
-		"statusBarItem.hoverBackground": "#1a1a1a",
-		"statusBarItem.remoteBackground": "#000000",
+		"statusBarItem.hoverBackground": "#5510bf",
+		"statusBarItem.remoteBackground": "#400c90",
 		"statusBarItem.remoteForeground": "#e7e7e7",
-		"titleBar.activeBackground": "#000000",
+		"titleBar.activeBackground": "#400c90",
 		"titleBar.activeForeground": "#e7e7e7",
-		"titleBar.inactiveBackground": "#00000099",
+		"titleBar.inactiveBackground": "#400c9099",
 		"titleBar.inactiveForeground": "#e7e7e799"
 	},
+
 	"superBG.opacity": 0,
 	"remote.autoForwardPorts": false,
-	"editor.codeLensFontFamily": "Consolas",
-	"editor.smoothScrolling": true,
-	"workbench.preferredHighContrastColorTheme": "matrixResolutions4128",
-	"workbench.preferredLightColorTheme": "Default Dark+",
 	"oneDarkPro.vivid": true,
-	"editor.guides.bracketPairs": "active",
 	"bracketPairColorizer.depreciation-notice": false,
+
 	"powermode.shake.enabled": false,
 	"powermode.shake.intensity": 0,
 	"powermode.explosions.size": 10,
-	"powermode.explosions.frequency": 1,
+	"powermode.explosions.frequency": 4,
 	"powermode.explosions.offset": -1,
 	"powermode.explosions.explosionOrder": "random",
 	"powermode.explosions.duration": 400,
 	"powermode.combo.counterEnabled": "show",
 	"powermode.presets": "exploding-rift",
 
-	"emmet.excludeLanguages":[],
+	"emmet.excludeLanguages": [],
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact",
 		"markdown": "html"
 	},
 	"emmet.showSuggestionsAsSnippets": true,
 	"emmet.triggerExpansionOnTab": true,
-	"editor.snippetSuggestions": "top",
 	"emmet.useInlineCompletions": true,
+	"emmet.preferences": {},
+
 	"[markdown]": {
 		"editor.unicodeHighlight.ambiguousCharacters": false,
 		"editor.unicodeHighlight.invisibleCharacters": false,
-		"editor.wordWrap": "on",
+		"editor.wordWrap": "off",
 		"editor.quickSuggestions": {
 			"comments": "on",
 			"strings": "on",
-			"other": "off",
+			"other": "off"
 		}
 	},
 
@@ -367,21 +442,6 @@
 		"*.json": "json"
 	},
 
-	"editor.minimap.maxColumn": 90,
-
-	"editor.lineHeight": 1.6,
-
-	"workbench.tree.renderIndentGuides": "always",
-	"vim.camelCaseMotion.enable": true,
-
-	"errorLens.enabled": true,
-	"errorLens.enabledDiagnosticLevels": [
-		"error",
-		"info",
-		"warning"
-	],
-
-	"editor.inlineSuggest.enabled": true,
 	"zenMode.hideLineNumbers": false,
 
 	"github.copilot.advanced": {},
@@ -392,42 +452,21 @@
 		"markdown": true
 	},
 
-	"debug.console.wordWrap": false,
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"vim.highlightedyank.enable": true,
-	"vim.highlightedyank.textColor": "cyan",
-	"vim.highlightedyank.color": "rgba(250, 240, 170, 0.1)",
+	"debug.console.wordWrap": true,
 	"[scss]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"editor.bracketPairColorization.enabled": true,
 	"[css]": {
 		"editor.defaultFormatter": "vscode.css-language-features"
 	},
 	"markdown-preview-enhanced.mathBlockDelimiters": [
-		[
-			"$$",
-			"$$"
-		],
-		[
-			"\\[",
-			"\\]"
-		]
+		["$$", "$$"],
+		["\\[", "\\]"]
 	],
 	"markdown-preview-enhanced.mathInlineDelimiters": [
-		[
-			"$",
-			"$"
-		],
-		[
-			"\\(",
-			"\\)"
-		]
+		["$", "$"],
+		["\\(", "\\)"]
 	],
-	"editor.fontWeight": "350",
-	"editor.renderWhitespace": "trailing",
 	"indentRainbow.colors": [
 		"rgba(255,255,64,0.07)",
 		"rgba(127,255,127,0.07)",
@@ -437,50 +476,59 @@
 	"better-comments.highlightPlainText": true,
 	"docwriter.hotkey.windows": "Alt + .",
 	"docwriter.style": "Javadoc",
-	"indentRainbow.excludedLanguages": [
-		"plaintext"
-	],
+	"indentRainbow.excludedLanguages": ["plaintext"],
 	"indentRainbow.indicatorStyle": "light",
-	// "java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-11.0.15.10-hotspot",
-	// "java.jdt.ls.java.home": "C:\\Program Files (x86)\\Java\\jre1.8.0_251",
-	"java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-17.0.3.7-hotspot",
-	"synthwave84.brightness": 4,
+	"synthwave84.brightness": 0.1,
 	"darkSynthwave84.whatsNew": false,
 	"js/ts.implicitProjectConfig.experimentalDecorators": true,
+
 	"errorLens.fontStyleItalic": true,
 	"errorLens.fontWeight": "100",
+	"errorLens.fontSize": "18px",
 	"errorLens.gutterIconSize": "40%",
 	"errorLens.gutterIconSet": "circle",
 	"errorLens.margin": "40px",
 	"errorLens.messageBackgroundMode": "none",
+	"errorLens.enabled": true,
+	"errorLens.enabledDiagnosticLevels": ["error", "info", "warning", "hint"],
+
 	"autoBarrel.defaultLanguage": "JavaScript",
 	"hediet.vscode-drawio.codeLinkActivated": true,
-	"kanban.saveFiles.pathPreferences": [
-		".vscode/kanban.json",
-		"kanban.json"
-	],
-	"vim.smartRelativeLine": true,
-	"java.debug.settings.showStaticVariables": true,
+	"kanban.saveFiles.pathPreferences": [".vscode/kanban.json", "kanban.json"],
 	"emojisense.languages": {
 		"JavaScript": true,
 		"TypeScript": true,
 		"Markdown": true,
 		"JSON": true,
-		"Java": true,
+		"Java": true
 	},
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java",
+		"editor.formatOnSave": true
+	},
+	"java.debug.settings.showStaticVariables": true,
+	// "java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-11.0.15.10-hotspot",
+	// "java.jdt.ls.java.home": "C:\\Program Files (x86)\\Java\\jre1.8.0_251",
+	"java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-17.0.3.7-hotspot",
+
 	"zenMode.centerLayout": false,
 	"zenMode.hideStatusBar": false,
+
 	"security.workspace.trust.banner": "always",
 	"security.workspace.trust.startupPrompt": "always",
+
 	"eslint.format.enable": true,
 	"eslint.lintTask.enable": true,
-	"emmet.preferences": {
-	
-	},
-	"window.zoomLevel": -1,
-	"workbench.colorTheme": "Dark SynthWave '84",
+
 	"settingsSync.ignoredExtensions": [
 		"aaronyoung.dark-synthwave-vscode",
 		"robbowen.synthwave-vscode"
 	],
+	"vsicons.presets.tsOfficial": true,
+
+	"darkSynthwave84.brightness": 0.1,
+	"gitlens.plusFeatures.enabled": false,
+	"liveshare.presence": true,
+	"tabnine.experimentalAutoImports": true,
+	"window.zoomLevel": -1
 }

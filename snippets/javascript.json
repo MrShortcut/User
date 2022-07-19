@@ -14,6 +14,55 @@
 	// 	"description": "Log output to console"
 	// },
 
+	"uti 2 ufnR2 export const () => {}": {
+		"prefix": "uti2",
+		"body": [
+			"import React from 'react';\n",
+			"export const ${1:$TM_FILENAME_BASE} = () => { \n\treturn <>\n",
+			"\t<h1>${1:$TM_FILENAME_BASE}</h1>\n\t$2",
+			"\t</>\n}",
+		],
+		"description": "imrd -> React Component export {}"
+	},
+
+	"Entry point of React App": {
+		"prefix": "indexReact",
+		"body": [
+			"import React from 'react'",
+			"import ReactDOM from 'react-dom/client'",
+			"import { App } from './App'\n",
+			"const root = ReactDOM.createRoot(document.getElementById('root'))",
+			"root.render(<App />)",
+		],
+		"description": "Entry point of React App"
+	},
+
+	"Separator /* +--+ */": {
+		"prefix": "qsep",
+		"body": [
+			"/* +-----------------------------------------------------------------------------+ */"
+		],
+		"description": "Separator"
+	},
+
+	"Title of the top /** +--+ */": {
+		"prefix": "qttop",
+		"body": [
+			"/**",
+			" * +-------------------------------------------------------------+",
+			" *?| ${1:Ejemplo conceptual The Abstract Factory}                $2*",
+			" *?| ${3:Este ejemplo ilustra la estructura del patrón}          $4*",
+			" *?| ${5:centrándose en responder las siguientes preguntas:}     $6*",
+			" *?| ${7:¿De qué clases se compone?}                             $8*",
+			" *?| ${9:¿Qué papeles juegan esas clases?}                       $10*",
+			" *?| ${11:¿De qué forma se relacionan los elementos del patrón?} $12*",
+			" *?| ${13:index.ts: Ejemplo conceptual}                          $14*",
+			" * +-------------------------------------------------------------+",
+			"*/",
+		],
+		"description": "Title of the top"
+	},
+
 	"fill new Array": {
 		"prefix": "fillA",
 		"body": [
@@ -32,7 +81,7 @@
 	},
 
 	"matra for testing": {
-		"prefix": "mantra",
+		"prefix": "qmantra",
 		"body": [
 			"/*-------------<AAA>-<Mantra>-<AAA>------------*/",
 			"// Arrange ->",
@@ -55,15 +104,36 @@
 	},
 
 	"QuteCommentsForCore": {
-		"prefix": "core",
+		"prefix": "qcore",
 		"body": [
 			"/****************************************************************",
-			"*:::::::::::::$2::::::::*::${1:PRINT|VERSION}::*::::::::::::$2::::::::::*",
-			"****************************************************************/",
+			" *::::::::::::$2::::::::*::${1:PRINT|VERSION}::*::::::::::::$2::::::::::*",
+			" ***************************************************************/",
 			"$3"
 		],
 		"description": "Qute comments for the core"
 	},
+
+	"QuteComments [t]": {
+		"prefix": "qtcom",
+		"body": [
+			"/*",
+			" *         $2        *::${1:FUNCTIONAL}::*       $2",
+			" *******************************|********************************/",
+		],
+		"description": "Qute comments title"
+	},
+
+	"QuteComments [tt]": {
+		"prefix": "qttcom",
+		"body": [
+			"/*",
+			" !         $2        *::${1:FUNCTIONAL}::*       $2",
+			" ******************************|*******************************/",
+		],
+		"description": "Qute comments title"
+	},
+
 
 	"Colors of consola": {
 		"prefix": "ccolors",
@@ -233,7 +303,7 @@
 	},
 
 	"Doc": {
-		"prefix": "ComDoc",
+		"prefix": "qComDoc",
 		"body": [
 			"/**",
 			" * $1",
@@ -264,7 +334,15 @@
 		"body": [
 			":%s/\"/'/g",
 		],
-		"description": "Replace statement for vim"
+		"description": "Replace statement \" -> ' for vim"
+	},
+
+	"!Replace Statement": {
+		"prefix": "!rpl",
+		"body": [
+			":%s/'/\"/g",
+		],
+		"description": "Replace statement ' -> \" for vim"
 	},
 
 	"ufnR2 const () => {} export": {
@@ -549,4 +627,145 @@
 		],
 		"description": "webpack configuration"
 	},
+
+	"webpack production 19/jul/22 webpack.config.js": {
+		"prefix": "webpp",
+		"body": [
+			"const path = require('path');",
+			"const HtmlWebpackPlugin = require('html-webpack-plugin');",
+			"const MiniCssExtractPlugin = require('mini-css-extract-plugin');",
+			"const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');",
+			"const { CleanWebpackPlugin } = require('clean-webpack-plugin');\n",
+			"module.exports = {",
+			"	entry: './src/index.js',",
+			"	output: {",
+			"		filename: 'bundle.js',",
+			"		path: path.resolve(__dirname, 'dist'),",
+			"		publicPath: '/'",
+			"	},",
+			"	resolve: {",
+			"		extensions: ['.js', '.jsx']",
+			"	},\n",
+			"	mode: 'production',",
+			"	module: {",
+			"		rules: [",
+			"			{",
+			"				test: /\.(js|jsx)$/,",
+			"				exclude: /node_modules/,",
+			"				use: {",
+			"					loader: 'babel-loader',",
+			"					options: {",
+			"						presets: ['@babel/preset-env', '@babel/preset-react']",
+			"					},",
+			"				}",
+			"			},",
+			"			{",
+			"				test: /\.(png|jpg|gif|svg|jpeg|pdf)$/,",
+			"				type: 'asset/resource',",
+			"			},",
+			"			{",
+			"				test: /\.html$/,",
+			"				use: { loader: 'html-loader', }",
+			"			},",
+			"			{",
+			"				test: /\.css$/,",
+			"				use: [",
+			"					MiniCssExtractPlugin.loader,",
+			"					{ loader: 'css-loader', }",
+			"				]",
+			"			},",
+			"		]",
+			"	},",
+			"	plugins: [",
+			"		new HtmlWebpackPlugin({",
+			"			template: './public/index.html',",
+			"			filename: './index.html'",
+			"		}),",
+			"		new MiniCssExtractPlugin({",
+			"			filename: 'style.css',",
+			"			chunkFilename: '[name].css'",
+			"		}),",
+			"		new CleanWebpackPlugin(),",
+			"	],\n",
+			"	optimization: {",
+			"		minimize: true,",
+			"		minimizer: [new CssMinimizerPlugin()]",
+			"	}",
+			"};",
+		],
+		"description": "webpack config 19/jul/22 (production)"
+	},
+
+	"webpack development 19/jul/22 webpack.config.dev.js": {
+		"prefix": "webpd",
+		"body": [
+			"const path = require('path');",
+			"const HtmlWebpackPlugin = require('html-webpack-plugin');",
+			"const MiniCssExtractPlugin = require('mini-css-extract-plugin');",
+			"const { CleanWebpackPlugin } = require('clean-webpack-plugin');\n",
+			"module.exports = {",
+			"	entry: './src/index.js',",
+			"	output: {",
+			"		filename: 'bundle.js',",
+			"		path: path.resolve(__dirname, 'dist'),",
+			"		publicPath: '/'",
+			"	},",
+			"	resolve: {",
+			"		extensions: ['.js', '.jsx']",
+			"	},\n",
+			"	mode: 'development',",
+			"	module: {",
+			"		rules: [",
+			"			{",
+			"				test: /\.(js|jsx)$/,",
+			"				exclude: /node_modules/,",
+			"				use: {",
+			"					loader: 'babel-loader',",
+			"					options: {",
+			"						presets: ['@babel/preset-env', '@babel/preset-react']",
+			"					},",
+			"				}",
+			"			},",
+			"			{",
+			"				test: /\.(png|jpg|gif|svg|jpeg|pdf)$/,",
+			"				type: 'asset/resource',",
+			"			},",
+			"			{",
+			"				test: /\.html$/,",
+			"				use: { loader: 'html-loader', }",
+			"			},",
+			"			{",
+			"				test: /\.css$/,",
+			"				use: [",
+			"					MiniCssExtractPlugin.loader,",
+			"					{ loader: 'css-loader', }",
+			"				]",
+			"			},",
+			"		]",
+			"	},",
+			"	plugins: [",
+			"		new HtmlWebpackPlugin({",
+			"			template: './public/index.html',",
+			"			filename: './index.html'",
+			"		}),",
+			"		new MiniCssExtractPlugin({",
+			"			filename: 'style.css',",
+			"			chunkFilename: '[name].css'",
+			"		}),",
+			"		new CleanWebpackPlugin(),",
+			"	],\n",
+			"	devServer: {",
+			"		static: {",
+			"			directory: path.join(__dirname, 'dist')",
+			"		},",
+			"		port: 64340,",
+			"		compress: true,",
+			"		hot: true,",
+			"		historyApiFallback: true,",
+			"	}",
+			"}",
+		],
+		"description": "webpack config 19/jul/22 (development)"
+	},
+
 }
