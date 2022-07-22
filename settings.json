@@ -1,7 +1,20 @@
 {
+  "workbench.welcome.enabled": false,
+  "diffEditor.renderSideBySide": false,
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		".build/**": true,
+		"out*/**": true,
+		"i18n/**": true,
+		"extensions/**/out/**": true,
+		"*.min.js": true
+	},
+
 	"[javascript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features",
-		"editor.formatOnSave": true
+		"editor.formatOnSave": true,
+		"files.trimTrailingWhitespace": true,
 	},
 	"javascript.format.insertSpaceAfterConstructor": true,
 	"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
@@ -15,7 +28,7 @@
 	"powermode.explosions.maxExplosions": 1,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 245,
+	"glassit.alpha": 255,
 
 	"vim.easymotion": true,
 	"vim.incsearch": true,
@@ -233,12 +246,26 @@
 		"<C-f>": false,
 		"<C-i>": true
 	},
+
 	"sync.gist": "ddcf965de3de1a942df4631b4f990687",
+
 	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "vscode.json-language-features"
 	},
+
 	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "vscode.html-language-features",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			// For ESLint
+			"source.fixAll.eslint": true,
+			// For TSLint
+			"source.fixAll.tslint": true,
+			// For Stylelint
+			"source.fixAll.stylelint": true,
+			"editor.formatOnType": true
+		}	
+		
 	},
 
 	"prettier.tabWidth": 2,
@@ -252,6 +279,15 @@
 	"oneDarkPro.bold": true,
 	"liveServer.settings.donotShowInfoMsg": true,
 	"codesnap.transparentBackground": true,
+
+	"window.title": "${folderName}",
+	"terminal.integrated.fontSize": 18,
+	"breadcrumbs.enabled": false,
+
+	"editor.lineDecorationsWidth": 22, // Adds padding to the left
+	"editor.rulers": [60], // Adds a line at 80 characters
+	"workbench.editor.pinnedTabSizing": "compact",
+
 	"[typescript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features",
 		"editor.formatOnSave": true,
@@ -263,12 +299,18 @@
 			// For Stylelint
 			"source.fixAll.stylelint": true,
 			"typescript.format.insertSpaceBeforeFunctionParenthesis": true,
-			"editor.formatOnType": true
+			"editor.formatOnType": true,
+			"files.trimTrailingWhitespace": true,
 		}
 	},
+  "typescript.suggest.autoImports" : true,
 	"typescript.format.insertSpaceBeforeFunctionParenthesis": true,
 	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
 	"typescript.format.insertSpaceAfterConstructor": true,
+
+  "workbench.editor.labelFormat" : "short",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features",
 		"editor.formatOnSave": true,
@@ -350,20 +392,23 @@
 	"editor.suggestSelection": "first",
 	"editor.fontLigatures": true,
 	"editor.tabCompletion": "on",
-	"editor.fontWeight": "360",
+	// "editor.fontWeight": "600",
+	"editor.fontWeight": "330",
 	"editor.renderWhitespace": "trailing",
-	"editor.fontFamily": "'Cascadia Code','Input Mono','Hack Nerd Font',Consolas,'Lucida Console', Monospace",
+	"editor.fontFamily": "Cascadia Code, Hack NF, Open Sans Light, Cascadia Code, Input Mono, Hack Nerd Font, Consolas, Lucida Console, Monospace",
+	// "editor.letterSpacing": 1,
+	// "editor.letterSpacing": 1.6,
 	"editor.cursorBlinking": "expand",
-	"editor.cursorSmoothCaretAnimation": true,
 	"editor.codeLensFontFamily": "Consolas",
-	"editor.smoothScrolling": true,
 	"editor.guides.bracketPairs": "active",
 	"editor.snippetSuggestions": "top",
 
 	"editor.accessibilitySupport": "off",
-	"editor.fontSize": 20,
-	"editor.tabSize": 2,
-	"editor.minimap.maxColumn": 90,
+	"editor.autoIndent": "full",
+	"editor.autoSurround": "languageDefined",
+	"editor.fontSize": 24,
+	"editor.tabSize": 2.2,
+	"editor.minimap.maxColumn": 40,
 	"editor.lineHeight": 1.618,
 	"editor.inlineSuggest.enabled": true,
 	"editor.bracketPairColorization.enabled": true,
@@ -372,33 +417,33 @@
 	"workbench.preferredHighContrastColorTheme": "matrixResolutions4128",
 	"workbench.preferredLightColorTheme": "Default Dark+",
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.colorTheme": "Dark SynthWave '84",
+	"workbench.colorTheme": "Gruvbox Dark Hard",
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.sideBar.location": "right",
 	"workbench.editorAssociations": {
 		"*.pdf": "analyticsignal.preview-pdf"
 	},
 	"workbench.colorCustomizations": {
-		"editorCursor.foreground": "#11ecff",
+		"editorCursor.foreground": "#ffff00",
 		"terminalCursor.foreground": "#ffff00",
 		"editor.selectionHighlightBackground": "#11cdee19",
 		"editor.selectionBackground": "#ff000081",
-		"activityBar.activeBackground": "#1a1a1a",
-		"activityBar.activeBorder": "#606020",
-		"activityBar.background": "#1a1a1a",
+		"activityBar.activeBackground": "#ff3333",
+		"activityBar.activeBorder": "#00df00",
+		"activityBar.background": "#ff3333",
 		"activityBar.foreground": "#e7e7e7",
 		"activityBar.inactiveForeground": "#e7e7e799",
-		"activityBarBadge.background": "#606020",
-		"activityBarBadge.foreground": "#e7e7e7",
-		"sash.hoverBorder": "#1a1a1a",
-		"statusBar.background": "#000000",
+		"activityBarBadge.background": "#00df00",
+		"activityBarBadge.foreground": "#15202b",
+		"sash.hoverBorder": "#ff3333",
+		"statusBar.background": "#ff0000",
 		"statusBar.foreground": "#e7e7e7",
-		"statusBarItem.hoverBackground": "#1a1a1a",
-		"statusBarItem.remoteBackground": "#000000",
+		"statusBarItem.hoverBackground": "#ff3333",
+		"statusBarItem.remoteBackground": "#ff0000",
 		"statusBarItem.remoteForeground": "#e7e7e7",
-		"titleBar.activeBackground": "#000000",
+		"titleBar.activeBackground": "#ff0000",
 		"titleBar.activeForeground": "#e7e7e7",
-		"titleBar.inactiveBackground": "#00000099",
+		"titleBar.inactiveBackground": "#ff000099",
 		"titleBar.inactiveForeground": "#e7e7e799"
 	},
 
@@ -478,7 +523,7 @@
 	"docwriter.style": "Javadoc",
 	"indentRainbow.excludedLanguages": ["plaintext"],
 	"indentRainbow.indicatorStyle": "light",
-	"synthwave84.brightness": 0.1,
+	"synthwave84.brightness": 0,
 	"darkSynthwave84.whatsNew": false,
 	"js/ts.implicitProjectConfig.experimentalDecorators": true,
 
@@ -504,7 +549,8 @@
 	},
 	"[java]": {
 		"editor.defaultFormatter": "redhat.java",
-		"editor.formatOnSave": true
+		"editor.formatOnSave": true,
+		"files.trimTrailingWhitespace": true,
 	},
 	"java.debug.settings.showStaticVariables": true,
 	// "java.jdt.ls.java.home": "Z:\\Program Files\\Eclipse Adoptium\\jdk-11.0.15.10-hotspot",
@@ -526,9 +572,11 @@
 	],
 	"vsicons.presets.tsOfficial": true,
 
-	"darkSynthwave84.brightness": 0.1,
+	"darkSynthwave84.brightness": 0,
 	"gitlens.plusFeatures.enabled": false,
 	"liveshare.presence": true,
 	"tabnine.experimentalAutoImports": true,
-	"window.zoomLevel": -1
+	"vim.foldfix": true,
+	"window.zoomLevel": -2
+	
 }
