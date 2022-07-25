@@ -26,7 +26,7 @@
 	},
 
 	"Entry point of React App": {
-		"prefix": "indexReact",
+		"prefix": "entryPoint",
 		"body": [
 			"import React from 'react'",
 			"import ReactDOM from 'react-dom/client'",
@@ -376,8 +376,8 @@
 	},
 
 	"normal import moduleName from 'module'": {
-		"prefix": "imp",
-		"body": "import ${2:moduleName} from '${1:module}';",
+		"prefix": "nimp",
+		"body": "import { ${2:moduleName} } from '${1:module}';",
 		"description": "normal import module"
 	},
 

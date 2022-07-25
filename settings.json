@@ -28,7 +28,7 @@
 	"powermode.explosions.maxExplosions": 1,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 255,
+	"glassit.alpha": 225,
 
 	"vim.easymotion": true,
 	"vim.incsearch": true,
@@ -282,7 +282,6 @@
 
 	"window.title": "${folderName}",
 	"terminal.integrated.fontSize": 18,
-	"breadcrumbs.enabled": false,
 
 	"editor.lineDecorationsWidth": 22, // Adds padding to the left
 	"editor.rulers": [60], // Adds a line at 80 characters
@@ -417,7 +416,7 @@
 	"workbench.preferredHighContrastColorTheme": "matrixResolutions4128",
 	"workbench.preferredLightColorTheme": "Default Dark+",
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.colorTheme": "Gruvbox Dark Hard",
+	"workbench.colorTheme": "NeoSolarized Theme",
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.sideBar.location": "right",
 	"workbench.editorAssociations": {
