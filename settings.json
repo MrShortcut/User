@@ -28,7 +28,7 @@
 	"powermode.explosions.maxExplosions": 1,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 225,
+	"glassit.alpha": 255,
 
 	"vim.easymotion": true,
 	"vim.incsearch": true,
@@ -284,7 +284,7 @@
 	"terminal.integrated.fontSize": 18,
 
 	"editor.lineDecorationsWidth": 22, // Adds padding to the left
-	"editor.rulers": [60], // Adds a line at 80 characters
+	// "editor.rulers": [60], // Adds a line at 80 characters
 	"workbench.editor.pinnedTabSizing": "compact",
 
 	"[typescript]": {
@@ -306,8 +306,6 @@
 	"typescript.format.insertSpaceBeforeFunctionParenthesis": true,
 	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
 	"typescript.format.insertSpaceAfterConstructor": true,
-
-  "workbench.editor.labelFormat" : "short",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
 	"[typescriptreact]": {
@@ -324,6 +322,9 @@
 			"editor.formatOnType": true
 		}
 	},
+
+  "workbench.editor.labelFormat" : "short",
+
 	"vitest.enable": true,
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -389,10 +390,13 @@
 	],
 
 	"editor.suggestSelection": "first",
+	"editor.snippetSuggestions": "inline",
+	"editor.inlineSuggest.enabled": true,
+
 	"editor.fontLigatures": true,
 	"editor.tabCompletion": "on",
 	// "editor.fontWeight": "600",
-	"editor.fontWeight": "330",
+	"editor.fontWeight": "360",
 	"editor.renderWhitespace": "trailing",
 	"editor.fontFamily": "Cascadia Code, Hack NF, Open Sans Light, Cascadia Code, Input Mono, Hack Nerd Font, Consolas, Lucida Console, Monospace",
 	// "editor.letterSpacing": 1,
@@ -400,16 +404,14 @@
 	"editor.cursorBlinking": "expand",
 	"editor.codeLensFontFamily": "Consolas",
 	"editor.guides.bracketPairs": "active",
-	"editor.snippetSuggestions": "top",
 
 	"editor.accessibilitySupport": "off",
 	"editor.autoIndent": "full",
 	"editor.autoSurround": "languageDefined",
-	"editor.fontSize": 24,
+	"editor.fontSize": 20,
 	"editor.tabSize": 2.2,
 	"editor.minimap.maxColumn": 40,
-	"editor.lineHeight": 1.618,
-	"editor.inlineSuggest.enabled": true,
+	"editor.lineHeight": 1.718,
 	"editor.bracketPairColorization.enabled": true,
 
 	"workbench.preferredDarkColorTheme": "Vitesse Dark",
@@ -427,22 +429,22 @@
 		"terminalCursor.foreground": "#ffff00",
 		"editor.selectionHighlightBackground": "#11cdee19",
 		"editor.selectionBackground": "#ff000081",
-		"activityBar.activeBackground": "#ff3333",
-		"activityBar.activeBorder": "#00df00",
-		"activityBar.background": "#ff3333",
+		"activityBar.activeBackground": "#1a1a1a",
+		"activityBar.activeBorder": "#606020",
+		"activityBar.background": "#1a1a1a",
 		"activityBar.foreground": "#e7e7e7",
 		"activityBar.inactiveForeground": "#e7e7e799",
-		"activityBarBadge.background": "#00df00",
-		"activityBarBadge.foreground": "#15202b",
-		"sash.hoverBorder": "#ff3333",
-		"statusBar.background": "#ff0000",
+		"activityBarBadge.background": "#606020",
+		"activityBarBadge.foreground": "#e7e7e7",
+		"sash.hoverBorder": "#1a1a1a",
+		"statusBar.background": "#000000",
 		"statusBar.foreground": "#e7e7e7",
-		"statusBarItem.hoverBackground": "#ff3333",
-		"statusBarItem.remoteBackground": "#ff0000",
+		"statusBarItem.hoverBackground": "#1a1a1a",
+		"statusBarItem.remoteBackground": "#000000",
 		"statusBarItem.remoteForeground": "#e7e7e7",
-		"titleBar.activeBackground": "#ff0000",
+		"titleBar.activeBackground": "#000000",
 		"titleBar.activeForeground": "#e7e7e7",
-		"titleBar.inactiveBackground": "#ff000099",
+		"titleBar.inactiveBackground": "#00000099",
 		"titleBar.inactiveForeground": "#e7e7e799"
 	},
 
@@ -576,6 +578,6 @@
 	"liveshare.presence": true,
 	"tabnine.experimentalAutoImports": true,
 	"vim.foldfix": true,
-	"window.zoomLevel": -2
-	
+	"editor.guides.indentation": false,
+	"window.zoomLevel": -1,
 }

@@ -41,19 +41,19 @@
 
 	"ifee": {
 		"prefix": "ife",
-		"body": ["(()=>{\n\t$1\n})();"],
+		"body": ["(() => {\n\t$1\n})();"],
 		"description": "fn IFFEE"
 	},
 
 	"afn": {
 		"prefix": "afn",
-		"body": ["const ${1:name}=($2)=>$3"],
+		"body": ["const ${1:name} = ($2) => $3"],
 		"description": "arrow fn"
 	},
 
 	"anfn": {
 		"prefix": "anfn",
-		"body": [" ($1)=>$2"],
+		"body": [" ($1) => $2"],
 		"description": "anon arrow fn"
 	},
 
