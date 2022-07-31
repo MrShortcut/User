@@ -13,6 +13,23 @@
 	// 	"description": "Log output to console"
 	// },
 
+	"Replace Statement": {
+		"prefix": "rpl",
+		"body": [
+			":%s/\"/'/g",
+		],
+		"description": "Replace statement \" -> ' for vim"
+	},
+
+	"!Replace Statement": {
+		"prefix": "!rpl",
+		"body": [
+			":%s/'/\"/g",
+		],
+		"description": "Replace statement ' -> \" for vim"
+	},
+
+
 	"Entry point of React App": {
 		"prefix": "entryPoint",
 		"body": [

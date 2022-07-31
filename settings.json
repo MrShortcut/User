@@ -28,7 +28,7 @@
 	"powermode.explosions.maxExplosions": 1,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 255,
+	"glassit.alpha": 250,
 
 	"vim.easymotion": true,
 	"vim.incsearch": true,
@@ -297,7 +297,10 @@
 			"source.fixAll.tslint": true,
 			// For Stylelint
 			"source.fixAll.stylelint": true,
+			// For Stylelint
 			"typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+			"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+			"typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
 			"editor.formatOnType": true,
 			"files.trimTrailingWhitespace": true,
 		}
@@ -307,6 +310,16 @@
 	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
 	"typescript.format.insertSpaceAfterConstructor": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+
+	// "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+	// Defines space handling after opening and before closing non empty brackets.
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+	// Defines space handling after opening and before closing template string braces.
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
 
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features",
@@ -318,6 +331,13 @@
 			"source.fixAll.tslint": true,
 			// For Stylelint
 			"typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+			"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+			"typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+			"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+			// Defines space handling after opening and before closing non empty brackets.
+			"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+			// Defines space handling after opening and before closing template string braces.
+			"typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
 			"source.fixAll.stylelint": true,
 			"editor.formatOnType": true
 		}
@@ -396,7 +416,7 @@
 	"editor.fontLigatures": true,
 	"editor.tabCompletion": "on",
 	// "editor.fontWeight": "600",
-	"editor.fontWeight": "360",
+	"editor.fontWeight": "340",
 	"editor.renderWhitespace": "trailing",
 	"editor.fontFamily": "Cascadia Code, Hack NF, Open Sans Light, Cascadia Code, Input Mono, Hack Nerd Font, Consolas, Lucida Console, Monospace",
 	// "editor.letterSpacing": 1,
@@ -408,10 +428,10 @@
 	"editor.accessibilitySupport": "off",
 	"editor.autoIndent": "full",
 	"editor.autoSurround": "languageDefined",
-	"editor.fontSize": 20,
+	"editor.fontSize": 18,
 	"editor.tabSize": 2.2,
 	"editor.minimap.maxColumn": 40,
-	"editor.lineHeight": 1.718,
+	"editor.lineHeight": 1.618,
 	"editor.bracketPairColorization.enabled": true,
 
 	"workbench.preferredDarkColorTheme": "Vitesse Dark",
@@ -445,8 +465,43 @@
 		"titleBar.activeBackground": "#000000",
 		"titleBar.activeForeground": "#e7e7e7",
 		"titleBar.inactiveBackground": "#00000099",
-		"titleBar.inactiveForeground": "#e7e7e799"
+		"titleBar.inactiveForeground": "#e7e7e799",
+		"editorBracketHighlight.foreground1": "#fafafa",
+		"editorBracketPairGuide.background1": "#a29999",
+		"editorBracketPairGuide.activeBackground1": "#fff5f5",
+		"editorBracketHighlight.foreground2": "#9F51B6",
+		"editorBracketPairGuide.background2": "#9F51B6",
+		"editorBracketPairGuide.activeBackground2": "#C122E99E",
+		"editorBracketHighlight.foreground3": "#fac928",
+		"editorBracketPairGuide.background3": "#fac9289E",
+		"editorBracketPairGuide.activeBackground3": "#FAC9289E",
+		"editorBracketHighlight.foreground4": "#f51384",
+		"editorBracketPairGuide.background4": "#f513849E",
+		"editorBracketPairGuide.activeBackground4": "#F513849E",
+		"editorBracketHighlight.foreground5": "#00e74d",
+		"editorBracketPairGuide.background5": "#00e74d9E",
+		"editorBracketPairGuide.activeBackground5": "#00E7499E",
+		"editorBracketPairGuide.background6": "#057aff9E",
+		"editorBracketHighlight.foreground6": "#057aff",
+		"editorBracketPairGuide.activeBackground6": "#057AFF9E"
 	},
+  "peacock.color": "black",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.language.colorizedBracketPairs": [
+    [ ":", ":" ],
+    [ ".", "." ],
+    [ ",", "," ],
+    [ ";", ";" ],
+    [ "[", "]" ],
+    [ "(", ")" ],
+    [ "{", "}" ],
+    [ "#fafafa" ],
+    [ "#9F51B6" ],
+    [ "#F7C244" ],
+    [ "#F07850" ],
+    [ "#9CDD29" ],
+    [ "#0098FA" ]
+  ],
 
 	"superBG.opacity": 0,
 	"remote.autoForwardPorts": false,
