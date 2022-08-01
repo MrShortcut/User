@@ -299,5 +299,9 @@
         "key": "ctrl+alt+n",
         "command": "-markJump.jumpToEditorMarks.note",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-editor.action.selectAll"
     }
 ]

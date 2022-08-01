@@ -28,7 +28,7 @@
 	"powermode.explosions.maxExplosions": 1,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 250,
+	"glassit.alpha": 245,
 
 	"vim.easymotion": true,
 	"vim.incsearch": true,
@@ -85,8 +85,16 @@
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
 		{
-			"before": ["<leader>", "w"],
+			"before": ["s", "v"],
 			"commands": ["workbench.action.splitEditor"]
+		},
+		{
+			"before": ["s", "s"],
+			"commands": ["workbench.action.splitEditorDown"]
+		},
+		{
+			"before": ["<leader>", "q"],
+			"commands": [":wq!"]
 		},
 		{
 			"before": ["<leader>", "e"],
@@ -94,6 +102,10 @@
 		},
 		{
 			"before": ["<leader>", "f"],
+			"commands": ["revealInExplorer"]
+		},
+		{
+			"before": ["s", "f"],
 			"commands": ["revealInExplorer"]
 		},
 		{
@@ -107,6 +119,14 @@
 		{
 			"before": ["<leader>", "l"],
 			"after": ["$"]
+		},
+		{
+			"before": ["-"],
+			"after": ["<C-x>"]
+		},
+		{
+			"before": ["+"],
+			"after": ["<C-a>"]
 		},
 		{
 			"before": ["<leader>", "z"],
@@ -593,7 +613,7 @@
 	"errorLens.enabled": true,
 	"errorLens.enabledDiagnosticLevels": ["error", "info", "warning", "hint"],
 
-	"autoBarrel.defaultLanguage": "JavaScript",
+	"autoBarrel.defaultLanguage": "TypeScript",
 	"hediet.vscode-drawio.codeLinkActivated": true,
 	"kanban.saveFiles.pathPreferences": [".vscode/kanban.json", "kanban.json"],
 	"emojisense.languages": {
