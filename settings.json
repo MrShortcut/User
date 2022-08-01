@@ -264,7 +264,7 @@
 	"vim.handleKeys": {
 		"<C-a>": false,
 		"<C-f>": false,
-		"<C-i>": true
+		"<C-i>": true,
 	},
 
 	"sync.gist": "ddcf965de3de1a942df4631b4f990687",
@@ -655,4 +655,5 @@
 	"vim.foldfix": true,
 	"editor.guides.indentation": false,
 	"window.zoomLevel": -1,
+	"path-intellisense.autoTriggerNextSuggestion": true,
 }

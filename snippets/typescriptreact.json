@@ -22,13 +22,12 @@
 	},
 
 	"!Replace Statement": {
-		"prefix": "!rpl",
+		"prefix": "rpl!",
 		"body": [
 			":%s/'/\"/g",
 		],
 		"description": "Replace statement ' -> \" for vim"
 	},
-
 
 	"Entry point of React App": {
 		"prefix": "entryPoint",
@@ -42,9 +41,8 @@
 		"description": "Entry point of React App"
 	},
 
-
 	"Separator /* +--+ */": {
-		"prefix": "qsep",
+		"prefix": "qtsep",
 		"body": [
 			"/* +-----------------------------------------------------------------------------+ */"
 		],
@@ -75,25 +73,37 @@
 	},
 
 	"function () => {}": {
-		"prefix": "nf",
+		"prefix": "fnf",
 		"body": "function ${1:name} (${2:param}) {\n\t${3:return }\n}",
 		"description": "function [name] () {}"
 	},
 
 	"export function () => {}": {
-		"prefix": "ef",
+		"prefix": "fnef",
 		"body": "export function ${1:name} (${2:param}) {\n\t${3:return }\n}",
 		"description": "function [name] () {}"
 	},
 
 	"() => {}": {
-		"prefix": "af",
+		"prefix": "fnan",
 		"body": "(${1:el}) => ${2:r}",
 		"description": "annon () => {}"
 	},
 
+	"f = () => ": {
+		"prefix": "fnaf",
+		"body": "const ${1:named} = (${2:param}) => ${3:r}",
+		"description": "named arrow f = () => "
+	},
+
+	"f = () => {}": {
+		"prefix": "fnaff",
+		"body": "const ${1:named} = (${2:param}) => {\n\t${3:r}\n}",
+		"description": "named arrow f () => {}"
+	},
+
 	"QuteComments [*]": {
-		"prefix": "qcom",
+		"prefix": "qttcom",
 		"body": [
 			"/****************************************************************",
 			" *        $2           *::${1:PrinterCheatsheet}::*          $2          *",
@@ -123,7 +133,7 @@
 	},
 
 	"QuteCommentsTEST [!]": {
-		"prefix": "qcomt",
+		"prefix": "qtcomt",
 		"body": [
 			"/****************************************************************",
 			" *         $2           !::${1:TESTQCOM}::!          $2          *",
@@ -133,7 +143,7 @@
 	},
 
 	"QuteCommentsForCore": {
-		"prefix": "qcore",
+		"prefix": "qtcore",
 		"body": [
 			"/****************************************************************",
 			" *::::::::::::$2::::::::*::${1:PRINT|VERSION}::*::::::::::::$2::::::::::*",
@@ -144,7 +154,7 @@
 	},
 
 	"QuteCommentsForDate": {
-		"prefix": "qdat",
+		"prefix": "qtdat",
 		"body": [
 			"/****************************************************************",
 			" *:::::::::::$2:::::::*::${1:MY|JSON|CONFIGS}::*::::::::::$2:::::::::*",
@@ -156,7 +166,7 @@
 	},
 
 	"Doc": {
-		"prefix": "ComDoc",
+		"prefix": "qtComDoc",
 		"body": ["/**", " * $1", " */"],
 		"description": "doc Documentation comments"
 	},
@@ -214,14 +224,12 @@
 		"prefix": "uti",
 		"body": [
 			"import React from 'react';\n",
-			"export function ${1:$TM_FILENAME_BASE} () { return ( <>\n",
+			"export function ${1:$TM_FILENAME_BASE} () {\n\treturn <>\n",
 			"\t<h1>${1:$TM_FILENAME_BASE}</h1>$2\n",
-			"</> ) };",
+			"</>\n};",
 		],
 		"description": "imrd -> React Component export {}"
 	},
-
-
 
 
 }
