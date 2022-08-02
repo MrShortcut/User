@@ -305,12 +305,12 @@
         "command": "-editor.action.selectAll"
     },
     {
-        "key": "ctrl+l",
+        "key": "ctrl+h",
         "command": "workbench.action.increaseViewWidth",
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+h",
+        "key": "ctrl+l",
         "command": "workbench.action.decreaseViewWidth",
         "when": "editorFocus"
     },
