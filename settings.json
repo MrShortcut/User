@@ -93,6 +93,18 @@
 			"commands": ["workbench.action.splitEditorDown"]
 		},
 		{
+			"before": ["s", "h"],
+			"after": ["<C-w>", "w"]
+		},
+		{
+			"before": ["<leader>", "<leader>", "o"],
+			"after": ["O"]
+		},
+		{
+			"before": ["s", "l"],
+			"after": ["<C-w>", "l"]
+		},
+		{
 			"before": ["<leader>", "q"],
 			"commands": [":wq!"]
 		},
@@ -265,6 +277,7 @@
 		"<C-a>": false,
 		"<C-f>": false,
 		"<C-i>": true,
+		"<C-w>": true,
 	},
 
 	"sync.gist": "ddcf965de3de1a942df4631b4f990687",
@@ -654,6 +667,6 @@
 	"tabnine.experimentalAutoImports": true,
 	"vim.foldfix": true,
 	"editor.guides.indentation": false,
-	"window.zoomLevel": -1,
 	"path-intellisense.autoTriggerNextSuggestion": true,
+	"window.zoomLevel": -1,
 }
