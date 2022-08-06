@@ -28,7 +28,7 @@
 	"powermode.explosions.maxExplosions": 1,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 245,
+	"glassit.alpha": 255,
 
 	"vim.easymotion": true,
 	"vim.incsearch": true,
@@ -97,12 +97,12 @@
 			"after": ["<C-w>", "w"]
 		},
 		{
-			"before": ["<leader>", "<leader>", "o"],
-			"after": ["O"]
-		},
-		{
 			"before": ["s", "l"],
 			"after": ["<C-w>", "l"]
+		},
+		{
+			"before": ["<leader>", "<leader>", "o"],
+			"after": ["O"]
 		},
 		{
 			"before": ["<leader>", "q"],
@@ -298,7 +298,19 @@
 			"source.fixAll.stylelint": true,
 			"editor.formatOnType": true
 		}	
-		
+	},
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			// For ESLint
+			"source.fixAll.eslint": true,
+			// For TSLint
+			"source.fixAll.tslint": true,
+			// For Stylelint
+			"source.fixAll.stylelint": true,
+			"editor.formatOnType": true
+		}	
 	},
 
 	"prettier.tabWidth": 2,
@@ -482,22 +494,22 @@
 		"terminalCursor.foreground": "#ffff00",
 		"editor.selectionHighlightBackground": "#11cdee19",
 		"editor.selectionBackground": "#ff000081",
-		"activityBar.activeBackground": "#1a1a1a",
-		"activityBar.activeBorder": "#606020",
-		"activityBar.background": "#1a1a1a",
+		"activityBar.activeBackground": "#ed365b",
+		"activityBar.activeBorder": "#185808",
+		"activityBar.background": "#ed365b",
 		"activityBar.foreground": "#e7e7e7",
 		"activityBar.inactiveForeground": "#e7e7e799",
-		"activityBarBadge.background": "#606020",
+		"activityBarBadge.background": "#185808",
 		"activityBarBadge.foreground": "#e7e7e7",
-		"sash.hoverBorder": "#1a1a1a",
-		"statusBar.background": "#000000",
+		"sash.hoverBorder": "#ed365b",
+		"statusBar.background": "#dc143c",
 		"statusBar.foreground": "#e7e7e7",
-		"statusBarItem.hoverBackground": "#1a1a1a",
-		"statusBarItem.remoteBackground": "#000000",
+		"statusBarItem.hoverBackground": "#ed365b",
+		"statusBarItem.remoteBackground": "#dc143c",
 		"statusBarItem.remoteForeground": "#e7e7e7",
-		"titleBar.activeBackground": "#000000",
+		"titleBar.activeBackground": "#dc143c",
 		"titleBar.activeForeground": "#e7e7e7",
-		"titleBar.inactiveBackground": "#00000099",
+		"titleBar.inactiveBackground": "#dc143c99",
 		"titleBar.inactiveForeground": "#e7e7e799",
 		"editorBracketHighlight.foreground1": "#fafafa",
 		"editorBracketPairGuide.background1": "#a29999",
@@ -590,9 +602,6 @@
 	"[scss]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"[css]": {
-		"editor.defaultFormatter": "vscode.css-language-features"
-	},
 	"markdown-preview-enhanced.mathBlockDelimiters": [
 		["$$", "$$"],
 		["\\[", "\\]"]
@@ -669,4 +678,9 @@
 	"editor.guides.indentation": false,
 	"path-intellisense.autoTriggerNextSuggestion": true,
 	"window.zoomLevel": -1,
+	"kite.codefinder.enableLineDecoration": true,
+	"kite.completions.disabledFileExtensions": [
+	
+	],
+	"kite.enableOptionalCompletionsTriggers": true,
 }

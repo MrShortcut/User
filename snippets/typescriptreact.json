@@ -78,10 +78,16 @@
 		"description": "function [name] () {}"
 	},
 
-	"export function () => {}": {
+	"export const = () => {}": {
+		"prefix": "fneaf",
+		"body": "export const ${1:name} = (${2:param}) => {\n\t${3:return }\n}",
+		"description": "export const [name] = () => {}"
+	},
+
+	"export function () {}": {
 		"prefix": "fnef",
 		"body": "export function ${1:name} (${2:param}) {\n\t${3:return }\n}",
-		"description": "function [name] () {}"
+		"description": "export function [name] () {}"
 	},
 
 	"() => {}": {
