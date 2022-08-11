@@ -14,6 +14,92 @@
 	// 	"description": "Log output to console"
 	// },
 
+	"All media querys": {
+		"prefix": "med",
+		"body": [
+			"/**",
+			" *  @Device = Desktops",
+			" *  Screen = 1281px to higher resolution desktops",
+			" */",
+			"@media (min-width: 1281px) {}",
+			"/**",
+			" *  @Device = Laptops, Desktops",
+			" *  Screen = B/w 1025px to 1280px",
+			" */",
+			"@media (min-width: 1025px) and (max-width: 1280px) {}",
+			" /**",
+			" * @Device = Tablets, Ipads (portrait)",
+			" * Screen = B/w 768px to 1024px",
+			" */",
+			"@media (min-width: 768px) and (max-width: 1024px) {}",
+			"/**",
+			" *  @Device = Tablets, Ipads (landscape)",
+			" *  Screen = B/w 768px to 1024px",
+			" */",
+			"@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}",
+			"/**",
+			" *  @Device = Low Resolution Tablets, Mobiles (Landscape)",
+			" *  Screen = B/w 481px to 767px",
+			" */",
+			"@media (min-width: 481px) and (max-width: 767px) {}",
+			"/**",
+			" *  @Device = Most of the Smartphones Mobiles (Portrait)",
+			" *  Screen = B/w 320px to 479px",
+			" */",
+			"@media (min-width: 320px) and (max-width: 480px) {}",
+		],
+		"description": "All @mediaQ"
+	},
+
+	"Color media querys": {
+		"prefix": "medC",
+		"body": [
+			"/**",
+			" *  @Device = Desktops",
+			" *  Screen = 1281px to higher resolution desktops",
+			" */",
+			"@media (min-width: 1281px) {",
+			"  /* background-color: khaki; */",
+			"}",
+			"/**",
+			" *  @Device = Laptops, Desktops",
+			" *  Screen = B/w 1025px to 1280px",
+			" */",
+			"@media (min-width: 1025px) and (max-width: 1280px) {",
+			"  /* background-color: thistle; */",
+			"}",
+			" /**",
+			" * @Device = Tablets, Ipads (portrait)",
+			" * Screen = B/w 768px to 1024px",
+			" */",
+			"@media (min-width: 768px) and (max-width: 1024px) {",
+			"  /* background-color: powderblue; */",
+			"}",
+			"/**",
+			" *  @Device = Tablets, Ipads (landscape)",
+			" *  Screen = B/w 768px to 1024px",
+			" */",
+			"@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {",
+			"  /* background-color: wheat; */",
+			"}",
+			"/**",
+			" *  @Device = Low Resolution Tablets, Mobiles (Landscape)",
+			" *  Screen = B/w 481px to 767px",
+			" */",
+			"@media (min-width: 481px) and (max-width: 767px) {",
+			"  /* background-color: aqua; */",
+			"}",
+			"/**",
+			" *  @Device = Most of the Smartphones Mobiles (Portrait)",
+			" *  Screen = B/w 320px to 479px",
+			" */",
+			"@media (min-width: 320px) and (max-width: 480px) {",
+			"  /* background-color: violet; */",
+			"}",
+		],
+		"description": "All @mediaQ"
+	},
+
 	"backdropF": {
 		"prefix": "backdropF",
 		"body": [
@@ -80,6 +166,122 @@
 	"$out outline: 1px solid red;":{
 		"prefix": "out",
 		"body": [ "outline: 1px solid red;" ],
+		"description": "dev css"
+	},
+
+	"$out outline: 1px solid wheat;":{
+		"prefix": "outw",
+		"body": [ "outline: 1px solid wheat;" ],
+		"description": "dev css"
+	},
+
+	"$out outline: 1px solid khaki;":{
+		"prefix": "outk",
+		"body": [ "outline: 1px solid khaki;" ],
+		"description": "dev css"
+	},
+
+	"$out outline: 1px solid powderblue;":{
+		"prefix": "outp",
+		"body": [ "outline: 1px solid powderblue;" ],
+		"description": "dev css"
+	},
+
+	"$out outline: 1px solid thistle;":{
+		"prefix": "outt",
+		"body": [ "outline: 1px solid thistle;" ],
+		"description": "dev css"
+	},
+
+	"$out outline: 1px solid aqua;":{
+		"prefix": "outa",
+		"body": [ "outline: 1px solid aqua;" ],
+		"description": "dev css"
+	},
+
+	"$out outline: 1px solid b;":{
+		"prefix": "outb",
+		"body": [ "outline: 1px solid #75c8ff;" ],
+		"description": "dev css"
+	},
+
+	"$out outline: 1px solid salmon;":{
+		"prefix": "outs",
+		"body": [ "outline: 1px solid salmon;" ],
+		"description": "dev css"
+	},
+
+	"$out outline: 1px solid violet;":{
+		"prefix": "outv",
+		"body": [ "outline: 1px solid violet;" ],
+		"description": "dev css"
+	},
+
+	"$out outline: 1px solid rgb(255, 197, 186);":{
+		"prefix": "outrgb",
+		"body": [ "outline: 1px solid rgb(255, 197, 186);" ],
+		"description": "dev css"
+	},
+
+	"$background-color rgb(255, 197, 186);":{
+		"prefix": "bgc",
+		"body": [ "background-color: rgb(255, 197, 186);" ],
+		"description": "dev css"
+	},
+
+	"$background-color khaki;":{
+		"prefix": "bgc",
+		"body": [ "background-color: khaki;" ],
+		"description": "dev css"
+	},
+
+	"$background-color powderblue;":{
+		"prefix": "bgp",
+		"body": [ "background-color: powderblue;" ],
+		"description": "dev css"
+	},
+
+	"$background-color thistle;":{
+		"prefix": "bgt",
+		"body": [ "background-color: thistle;" ],
+		"description": "dev css"
+	},
+
+	"$background-color wheat;":{
+		"prefix": "bgw",
+		"body": [ "background-color: wheat;" ],
+		"description": "dev css"
+	},
+
+	"$background-color aqua;":{
+		"prefix": "bgt",
+		"body": [ "background-color: aqua;" ],
+		"description": "dev css"
+	},
+
+	"$background-color violet;":{
+		"prefix": "bgv",
+		"body": [ "background-color: violet;" ],
+		"description": "dev css"
+	},
+
+	"$background-color salmon;":{
+		"prefix": "bgs",
+		"body": [ "background-color: salmon;" ],
+		"description": "dev css"
+	},
+
+	"$background-color all;":{
+		"prefix": "bgssAll",
+		"body": [ 
+			"background-color: khaki;",
+			"background-color: thistle;",
+			"background-color: powderblue;",
+			"background-color: wheat;",
+			"background-color: aqua;",
+			"background-color: violet;",
+			"background-color: salmon;",
+		],
 		"description": "dev css"
 	},
 
