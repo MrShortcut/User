@@ -28,7 +28,7 @@
 	"powermode.explosions.maxExplosions": 1,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 245,
+	"glassit.alpha": 240,
 
 	"vim.easymotion": true,
 	"vim.incsearch": true,
@@ -2534,4 +2534,5 @@
 		"*"
 	],
 	"window.zoomLevel": -1,
+	"workbench.activityBar.visible": false,
 }

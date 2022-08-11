@@ -334,4 +334,14 @@
         "command": "workbench.action.decreaseViewWidth",
         "when": "editorFocus"
     },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.increaseViewHeight",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.decreaseViewHeight",
+        "when": "editorFocus"
+    },
 ]

@@ -77,8 +77,8 @@
 		"description": "Center content"
 	},
 
-	"-out outline: 1px solid red;":{
-		"prefix": "-out",
+	"$out outline: 1px solid red;":{
+		"prefix": "out",
 		"body": [ "outline: 1px solid red;" ],
 		"description": "dev css"
 	},
