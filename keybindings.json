@@ -1,6 +1,26 @@
 // Coloque sus atajos de teclado en este archivo para sobreescribir los valores predeterminadosauto[]
 [
     {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+e",
+        "command": "extension.vim_ctrl+e",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+y",
+        "command": "extension.vim_ctrl+y",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
         "key": "tab",
         "command": "selectNextSuggestion",
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
@@ -296,7 +316,7 @@
         "when": "workbench.panel.output.active"
     },
     {
-        "key": "ctrl+alt+n",
+        "key": "ctrl+shift+n",
         "command": "-markJump.jumpToEditorMarks.note",
         "when": "editorTextFocus"
     },

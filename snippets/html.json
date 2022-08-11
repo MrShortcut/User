@@ -1,0 +1,64 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+  // eslint-disable //
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"qtcom": {
+		"prefix": "qtcom",
+		"body": [
+			"<!-- $2 :: @${1:qute comments for separating code} :: $2 -->",
+			"<!-- $3                             |                            $3 -->",
+		],
+		"description": "qute comment for separating code",
+	}
+
+	"!HTML SEO": {
+		"prefix": "!seo",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html>\n",
+			"<head>",
+			"	<meta charset='UTF-8' />",
+			"	<title>Rodrigo Moreno aka CheatModes4</title>",
+			"	<meta name='viewport' content='width=device-width, initial-scale=1.0' />",
+			"	<meta name='robots'   content='follow, index' />",
+			"	<meta name='description' content='Learning Engineer at @platzi - Frontend Developer - #JavaScript #TypeScript #Html5 #Css3 #React #Next #Nvim #Web3 #BTC #ETH ' />",
+			"	<meta property='og:url'  content='https://keepsimpleweb.github.io' />",
+			"	<meta property='og:type' content='website' />",
+			"	<meta property='og:site_name'   content='Rodrigo Moreno aka CheatModes4' />",
+			"	<meta property='og:description' content='Learning Engineer at @platzi - Frontend Developer - #JavaScript #TypeScript #Html5 #Css3 #React #Next #Nvim #Web3 #BTC #ETH ' />",
+			"	<meta property='og:title'  content='Rodrigo Moreno' />",
+			"	<meta property='og:image'  content='https://pbs.twimg.com/profile_images/1490328824411787264/aZ4btbsP_400x400.jpg' />",
+			"	<meta property='og:locale' content='es_ES' />",
+			"	<meta name='twitter:card'  content='summary_large_image' />",
+			"	<meta name='twitter:title' content='Rodrigo Moreno aka CheatModes4' />",
+			"	<meta name='twitter:description' content='Learning Engineer at @platzi - Frontend Developer - #JavaScript #TypeScript #Html5 #Css3 #React #Next #Nvim #Web3 #BTC #ETH' />",
+			"	<meta name='twitter:image'   content='https://pbs.twimg.com/profile_images/1490328824411787264/aZ4btbsP_400x400.jpg' />",
+			"	<meta name='twitter:site'    content='@CheatModes4' />",
+			"	<meta name='twitter:creator' content='@CheatModes4' />",
+			"	<link href='https://rroderickk.github.io/cv2/public/cef7538c16a1bd7513c4.png' rel='icon' type='image/png' />\n",
+			"	<script src='https://cdn.tailwindcss.com'></script>\n",
+			"	<style>\n",
+			"	</style>",
+			"  </head>",
+			" 	<body>",
+			" 		<h1>${1:Happy Hacking}</h1>",
+			"			$2",
+			" 	</body>",
+			"  </html>",
+		],
+		"description": "Happy Hacking"
+	}
+}
