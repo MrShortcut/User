@@ -15,6 +15,14 @@
 	// 	"description": "Log output to console"
 	// }
 
+	"<Img with attribs>": {
+		"prefix": "img",
+		"body": [
+			"<img alt='${0:SEO}' loading='lazy' width={$1} height={$2} aria-label='${3:Descriptive image text}' /> ",
+		],
+		"description": "img <img attribs />"
+	},
+
 	"qtcom": {
 		"prefix": "qtcom",
 		"body": [

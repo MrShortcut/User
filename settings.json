@@ -28,7 +28,7 @@
 	"powermode.explosions.maxExplosions": 1,
 	"git.fetchOnPull": false,
 	"code-runner.clearPreviousOutput": true,
-	"glassit.alpha": 245,
+	"glassit.alpha": 255,
 
 	"vim.easymotion": true,
 	"vim.incsearch": true,
@@ -147,6 +147,11 @@
 			// Toggle file sideBar
 			"before": ["<leader>", "e"],
 			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			// Toggle activityBar
+			"before": ["<leader>", "2", "e"],
+			"commands": ["workbench.action.toggleActivityBarVisibility"]
 		},
 		{
 			// Reveal current file in fileExplorer
@@ -366,8 +371,6 @@
 		"<M-k>": true,
 	},
 
-	"sync.gist": "ddcf965de3de1a942df4631b4f990687",
-
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
@@ -569,7 +572,6 @@
 	"workbench.preferredHighContrastColorTheme": "matrixResolutions4128",
 	"workbench.preferredLightColorTheme": "Default Dark+",
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.colorTheme": "NeoSolarized Theme",
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.sideBar.location": "right",
 	"workbench.editorAssociations": {
@@ -614,7 +616,8 @@
 		"editorBracketPairGuide.activeBackground5": "#00E7499E",
 		"editorBracketPairGuide.background6": "#057aff9E",
 		"editorBracketHighlight.foreground6": "#057aff",
-		"editorBracketPairGuide.activeBackground6": "#057AFF9E"
+		"editorBracketPairGuide.activeBackground6": "#057AFF9E",
+		"commandCenter.border": "#e7e7e799"
 	},
   "peacock.color": "black",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -2533,7 +2536,8 @@
 	"color-highlight.languages": [
 		"*"
 	],
-	"workbench.activityBar.visible": false,
-	"window.zoomLevel": -1,
 	"window.menuBarVisibility": "compact",
+	"window.zoomLevel": -1,
+	"terminal.integrated.gpuAcceleration": "off",
+	"workbench.colorTheme": "NeoSolarized Theme",
 }
