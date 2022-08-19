@@ -14,6 +14,15 @@
 	// 	"description": "Log output to console"
 	// },
 
+	"Import s": {
+		"prefix": "imps",
+		"body": [
+			"import s from './${0:$TM_FILENAME_BASE}.module.css'",
+		],
+		"description": "import s from './${0:$TM_FILENAME_BASE}."
+	},
+
+
 	"<Img with attribs>": {
 		"prefix": "img",
 		"body": [

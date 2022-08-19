@@ -15,7 +15,7 @@
 	// },
 
 	"All media querys": {
-		"prefix": "med",
+		"prefix": "medAll",
 		"body": [
 			"/**",
 			" *  @Device = Desktops",
@@ -52,7 +52,7 @@
 	},
 
 	"Color media querys": {
-		"prefix": "medC",
+		"prefix": "medcoAll",
 		"body": [
 			"/**",
 			" *  @Device = Desktops",
@@ -118,7 +118,7 @@
 	},
 
 	"filters": {
-		"prefix": "filt",
+		"prefix": "filtAll",
 		"body": [
 			"brightness(<number-percentage>);",
 			"contrast(<number-percentage>);",
@@ -135,7 +135,7 @@
 	},
 
 	"All mix-blend-mode": {
-		"prefix": "mix",
+		"prefix": "mixAll",
 		"body": [
 			"mix-blend-mode: screen;",
       "mix-blend-mode: hard-light;",
