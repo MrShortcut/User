@@ -163,6 +163,21 @@
 		"description": "Center content"
 	},
 
+	"cdiv center div absolute": {
+		"prefix": "cdivAbsolute",
+		"body": [
+			".${1:#content} {",
+			"	 position: absolute; ",
+			"	 left: 0; ",
+			"	 right: 0; ",
+			"	 margin-left: auto; ",
+			"	 margin-right: auto; ",
+			"	 width: 100px; /* Need a specific value to work */",
+			"}",
+		],
+		"description": "Center content absolute"
+	},
+
 	"$out outline: 1px solid red;":{
 		"prefix": "out",
 		"body": [ "outline: 1px solid red;" ],
