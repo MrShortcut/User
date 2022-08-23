@@ -14,6 +14,15 @@
 	// 	"description": "Log output to console"
 	// },
 
+	"border tailwind": {
+		"prefix": "dtail",
+		"body": [
+			"		border",
+      "   border-red-400",
+		],
+		"description": "Debug Tailwind"
+	},
+
 	"Import s": {
 		"prefix": "imps",
 		"body": [
@@ -26,17 +35,17 @@
 	"<Img with attribs>": {
 		"prefix": "img",
 		"body": [
-			"<img alt='${0:SEO}' loading='lazy' width={$1} height={$2} aria-label='${3:Descriptive image text}' /> ",
+			"<img alt='${0:SEO}'\nloading='lazy'\nwidth={$1}\nheight={$2}\naria-label='${3:Descriptive image text}'\n/> ",
 		],
 		"description": "img <img attribs />"
 	},
 
 	"export default f() {} .m.css": {
-		"prefix": "fnedfn",
+		"prefix": "fnedfnM",
 		"body": [
-			"import s from './${0:$TM_FILENAME_BASE}.module.css'",
+			"import s from './${0:$TM_FILENAME_BASE}.module.css'\n",
 			"export default function ${0:$TM_FILENAME_BASE} () {",
-			"return <>\n\t${1:HelloWorld}\n</>",
+			"return <>\n\t\t${0:$TM_FILENAME_BASE}\n\t</>",
 			"}"
 		],
 		"description": "export default f() {}"
@@ -50,6 +59,16 @@
 			"}"
 		],
 		"description": "export default f() {}"
+	},
+
+	"export function $f() { $ }": {
+		"prefix": "fne{}fn",
+		"body": [
+			"export function ${0:$TM_FILENAME_BASE} () {",
+			"return <div>\n\t${0:$TM_FILENAME_BASE}\n</div>",
+			"}"
+		],
+		"description": "export f() {}"
 	},
 
 	"Replace Statement": {
