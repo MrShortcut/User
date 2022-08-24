@@ -62,9 +62,14 @@
 			"after": ["d", "d"]
 		},
 		{
-			// Delete untils space
-			"before": ["<leader>", "¿"],
+			// Delete until space
+			"before": ["d", "<leader>", "d"],
 			"after": ["d", "t", "<Space>"]
+		},		
+    {
+			// Yank until space
+			"before": ["y", "<leader>", "y"],
+			"after": ["y", "t", "<Space>"]
 		},
 		{
 			"before": ["<C-n>"],
