@@ -370,6 +370,16 @@
 			"before": ["<leader>", "t"],
 			"commands": ["inlineFold.toggle"]
 		},
+		{
+			// rpl
+			"before": ["<leader>", "2", "f"],
+			"after": ["<Cmd>", ":", "%", "s", "/", "\"", "/", "'", "/", "g", "return"]
+		},
+		{
+			// !rpl
+			"before": ["<leader>", "3", "f"],
+			"after": ["<Cmd>", ":", "%", "s", "/", "'", "/", "\"", "/", "g", "return"]
+		},
 	],
 	"vim.leader": "<space>",
 	"vim.handleKeys": {
