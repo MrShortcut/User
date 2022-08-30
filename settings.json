@@ -85,6 +85,7 @@
 			"commands": ["workbench.action.previousEditor"]
 		},
 		{
+			// !J
 			"before": ["¿"],
 			"after": ["f", "<Space>", "a", "<CR>", "<Esc>"]
 		},
