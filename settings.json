@@ -83,7 +83,11 @@
 		{
 			"before": ["<leader>", "<tab>"],
 			"commands": ["workbench.action.previousEditor"]
-		}
+		},
+		{
+			"before": ["¿"],
+			"after": ["f", "<Space>", "a", "<CR>", "<Esc>"]
+		},
 	],
 	"vim.visualModeKeyBindings": [
 		{
