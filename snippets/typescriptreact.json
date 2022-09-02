@@ -290,6 +290,16 @@
 		"description": "export default f() {}"
 	},
 
+	"export const $f = () => { $ }": {
+		"prefix": "fnaae=>{}fn",
+		"body": [
+			"export const ${0:$TM_FILENAME_BASE} = () => {",
+			"return (\n\t\t<div>\n\t${0:$TM_FILENAME_BASE}\n</div>\n\t)",
+			"}"
+		],
+		"description": "export const f = () => {}"
+	},
+
 	"export function $f() { $ }": {
 		"prefix": "fne{}fn",
 		"body": [
