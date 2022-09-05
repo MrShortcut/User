@@ -666,7 +666,7 @@
 		"titleBar.border": "#010d11",
 		"contrastBorder": "#010d11",
 		"panel.border": "#3a393952",
-		"focusBorder": "#3a393952",
+		"focusBorder": "#ffffff",
 		"input.border": "#3a393952",
 		"panel.background": "#010d11",
 		"editorOverviewRuler.border": "#3a393952",
