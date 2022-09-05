@@ -766,7 +766,7 @@
 		// "tab.unfocusedActiveBorderTop": "#ff0000",
 		// "terminal.tab.activeBorder": "#ff0000",
 		// "banner.background": "#ff0000",
-		// // "editor.background": "#ff0000", // backg -------------
+		"editor.background": "#051017", // backg -------------
 		// // "editor.lineHighlightBorder": "#ff0000", // line border
 		// "editor.wordHighlightBorder": "#ff0000",
 		// "inputValidation.infoBorder": "#ff0000",
